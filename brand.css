@@ -1,11 +1,13 @@
-/* CountMeIn brand — mirrors app HeroGradient + Monthly Spending card reveal */
+/* CountMeIn brand accents — hero gradient colors from the app (not a fake spending card) */
 :root {
   --cmi-hero-1: #0B1B15;
   --cmi-hero-2: #123626;
   --cmi-hero-3: #0FAF83;
   --cmi-neon-green: #2BF5B0;
   --cmi-neon-cyan: #3FD8FF;
-  --cmi-ease: cubic-bezier(0.4, 0, 0.2, 1); /* FastOutSlowIn */
+  --cmi-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --accent: #1e5f4f;
+  --muted: #5a5a5a;
 }
 
 .site-header {
@@ -30,195 +32,70 @@
   height: 48px;
   border-radius: 12px;
   object-fit: contain;
-  background: #0B1B15;
+  background: var(--cmi-hero-1);
 }
 
 .brand-lockup .name {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: var(--accent, #1e5f4f);
+  background: linear-gradient(120deg, var(--cmi-hero-2), var(--cmi-hero-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .brand-lockup .sub {
   font-size: 0.8rem;
-  color: var(--muted, #5a5a5a);
+  color: var(--muted);
 }
 
-/* Monthly Spending card — same gradient + 800ms bar reveal as SpendingCapCard */
-.monthly-spending-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 16px;
-  color: #fff;
-  background: linear-gradient(135deg, var(--cmi-hero-1) 0%, var(--cmi-hero-2) 45%, var(--cmi-hero-3) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 10px 28px rgba(11, 27, 21, 0.28);
-  animation: cardEnter 700ms var(--cmi-ease) both;
-}
-
-.monthly-spending-card.compact {
-  padding: 12px 14px;
-  border-radius: 16px;
-  max-width: 320px;
-}
-
-.monthly-spending-card .rays {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.55;
-  background:
-    radial-gradient(ellipse 80% 50% at 20% 30%, rgba(43, 245, 176, 0.22), transparent 55%),
-    radial-gradient(ellipse 70% 45% at 75% 70%, rgba(63, 216, 255, 0.18), transparent 50%);
-  animation: raysDrift 8s ease-in-out infinite alternate;
-}
-
-.monthly-spending-card .inner {
-  position: relative;
-  z-index: 1;
-}
-
-.msc-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 6px;
-}
-
-.msc-label {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.msc-label svg {
-  width: 14px;
-  height: 14px;
-  opacity: 0.9;
-}
-
-.msc-badge {
-  min-width: 30px;
-  height: 30px;
-  padding: 0 6px;
-  border-radius: 999px;
-  background: #fff;
-  color: #0FAF83;
-  font-size: 0.7rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  animation: badgePop 600ms var(--cmi-ease) 200ms both;
-}
-
-.msc-amount {
-  font-size: 1.45rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 2px;
-  animation: amountIn 700ms var(--cmi-ease) 80ms both;
-}
-
-.monthly-spending-card.compact .msc-amount {
-  font-size: 1.15rem;
-}
-
-.msc-sub {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0 0 8px;
-}
-
-.msc-track {
+/* Thin animated brand bar — same colors as Monthly Spending card gradient */
+.brand-accent-bar {
+  height: 4px;
   width: 100%;
-  height: 5px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.25);
-  overflow: hidden;
+  background: linear-gradient(90deg, var(--cmi-hero-1), var(--cmi-hero-2), var(--cmi-hero-3), var(--cmi-neon-cyan));
+  background-size: 200% 100%;
+  animation: brandShimmer 2.8s var(--cmi-ease) infinite alternate;
+  margin: 14px 0 8px;
 }
 
-.msc-fill {
-  height: 100%;
-  width: 0%;
-  border-radius: 999px;
-  background: #fff;
-  animation: progressReveal 800ms var(--cmi-ease) 150ms forwards;
-}
-
-.msc-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 8px;
-  gap: 10px;
-}
-
-.msc-status {
-  font-size: 0.75rem;
+.brand-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--cmi-hero-1), var(--cmi-hero-2) 42%, var(--cmi-hero-3));
+  color: #fff;
   font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.95rem;
 }
 
-.msc-days {
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 400;
+.brand-btn:hover { filter: brightness(1.05); }
+
+.legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 12px 0 0;
+  font-size: 0.9rem;
 }
 
-.msc-chevron {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #fff;
-  color: #0FAF83;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
+.legal-nav a {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-@keyframes progressReveal {
-  from { width: 0%; }
-  to { width: var(--progress, 68%); }
-}
+.legal-nav a:hover { text-decoration: underline; }
 
-@keyframes cardEnter {
-  from { opacity: 0; transform: translateY(10px) scale(0.98); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-@keyframes amountIn {
-  from { opacity: 0; transform: scale(0.92); transform-origin: left top; }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes badgePop {
-  from { opacity: 0; transform: scale(0.7); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes raysDrift {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to { transform: translate3d(4%, -3%, 0) scale(1.04); }
+@keyframes brandShimmer {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .monthly-spending-card,
-  .msc-fill,
-  .msc-amount,
-  .msc-badge,
-  .monthly-spending-card .rays {
-    animation: none !important;
-  }
-  .msc-fill { width: var(--progress, 68%); }
+  .brand-accent-bar { animation: none; }
 }

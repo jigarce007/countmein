@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CountMeIn — Legal</title>
-<meta name="description" content="Legal information for CountMeIn by Infinity Fintech Solutions: Privacy Policy, Terms and Conditions, and Copyright Notice.">
+<meta name="description" content="Legal information for CountMeIn by Infinity Fintech Solutions: Privacy Policy, Terms, Copyright, and Contact.">
 <link rel="icon" href="logo.png" type="image/png">
 <link rel="stylesheet" href="brand.css">
 <style>
@@ -16,7 +16,6 @@
     --background: #F7FAF8;
     --card: #FFFFFF;
     --border: #E3EAE5;
-    --accent: #1e5f4f;
   }
   * { box-sizing: border-box; }
   body {
@@ -33,7 +32,7 @@
   .header-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 22px 24px;
+    padding: 22px 24px 18px;
   }
   main {
     max-width: 900px;
@@ -50,27 +49,6 @@
     margin: 0 0 28px;
     max-width: 62ch;
   }
-  .hero-row {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 22px;
-    align-items: stretch;
-    margin-bottom: 28px;
-  }
-  @media (max-width: 720px) {
-    .hero-row { grid-template-columns: 1fr; }
-  }
-  .hero-copy {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 22px 24px;
-  }
-  .hero-copy h2 {
-    margin: 0 0 8px;
-    font-size: 1.25rem;
-  }
-  .hero-copy p { margin: 0; color: var(--muted); }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -87,7 +65,7 @@
     transition: border-color .15s ease, transform .15s ease;
   }
   a.card:hover {
-    border-color: var(--primary);
+    border-color: var(--cmi-hero-3);
     transform: translateY(-1px);
   }
   a.card h2 {
@@ -96,16 +74,7 @@
     color: var(--primary-dark);
   }
   a.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-  .play {
-    display: inline-block;
-    margin-top: 28px;
-    padding: 12px 18px;
-    background: linear-gradient(135deg, #0B1B15, #123626 40%, #0FAF83);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: 600;
-  }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
   footer.page-foot {
     max-width: 900px;
     margin: 0 auto;
@@ -126,48 +95,15 @@
         <div class="sub">by Infinity Fintech Solutions</div>
       </div>
     </a>
+    <div class="brand-accent-bar" aria-hidden="true"></div>
   </div>
 </header>
 <main>
-  <div class="hero-row">
-    <div class="hero-copy">
-      <h1>Legal</h1>
-      <p class="intro" style="margin-bottom:12px">
-        Official policies for CountMeIn — expense tracking and bill splitting for people worldwide.
-        Last updated September 4, 2026.
-      </p>
-      <h2>Built like the app you use</h2>
-      <p>
-        The card on the right uses the same green hero gradient and progress reveal
-        as CountMeIn’s <strong>Monthly Spending</strong> card on Home.
-      </p>
-    </div>
-
-    <aside class="monthly-spending-card" style="--progress: 68%;" aria-label="Sample Monthly Spending card from CountMeIn">
-      <div class="rays" aria-hidden="true"></div>
-      <div class="inner">
-        <div class="msc-top">
-          <div class="msc-label">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z"/></svg>
-            Monthly spending
-          </div>
-          <span class="msc-badge">68%</span>
-        </div>
-        <p class="msc-amount">$342.50</p>
-        <p class="msc-sub">spent this month of $500.00</p>
-        <div class="msc-track" aria-hidden="true">
-          <div class="msc-fill"></div>
-        </div>
-        <div class="msc-foot">
-          <div>
-            <div class="msc-status">$157.50 remaining</div>
-            <div class="msc-days">12 days left this month</div>
-          </div>
-          <div class="msc-chevron" aria-hidden="true">›</div>
-        </div>
-      </div>
-    </aside>
-  </div>
+  <h1>Legal &amp; Support</h1>
+  <p class="intro">
+    Official policies and contact for CountMeIn — expense tracking and bill splitting for people worldwide.
+    Last updated September 4, 2026.
+  </p>
 
   <div class="grid">
     <a class="card" href="privacy.html">
@@ -182,12 +118,20 @@
       <h2>Copyright</h2>
       <p>Intellectual property ownership, trademarks, and infringement notices.</p>
     </a>
+    <a class="card" href="contact.html">
+      <h2>Feedback / Contact</h2>
+      <p>Send feedback, questions, or support requests.</p>
+    </a>
   </div>
-  <a class="play" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly">Get CountMeIn on Google Play</a>
+
+  <div class="actions">
+    <a class="brand-btn" href="contact.html">Contact us</a>
+    <a class="brand-btn" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly" style="opacity:.95">Get CountMeIn on Google Play</a>
+  </div>
 </main>
 <footer class="page-foot">
   <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved.</p>
-  <p>Contact: <a href="mailto:jigarce007@gmail.com">jigarce007@gmail.com</a></p>
+  <p>Contact: <a href="mailto:jigarce007@gmail.com">jigarce007@gmail.com</a> · <a href="contact.html">Feedback form</a></p>
 </footer>
 </body>
 </html>
