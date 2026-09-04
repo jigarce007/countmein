@@ -318,100 +318,78 @@ h1, h2, h3, .brand-name {
   font-weight: 700;
 }
 
-/* Cinematic story panels — text ON imagery */
-.story-stack {
-  display: grid;
-  gap: 18px;
-  width: min(var(--container), calc(100% - 2 * var(--gutter)));
-  margin: 0 auto;
-}
-.story-panel {
+/* Full-bleed lifestyle scenes — same treatment as the hero */
+.scene {
   position: relative;
-  min-height: clamp(360px, 52vw, 480px);
-  border-radius: 32px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  color: #fff;
+  min-height: clamp(480px, 70vh, 640px);
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(48px, 8vw, 88px) 0;
+  background: var(--cmi-1);
 }
-.story-panel img {
+.scene-media {
   position: absolute;
   inset: 0;
+  z-index: 0;
+}
+.scene-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.03);
-  transition: transform .7s var(--ease);
+  object-position: center center;
+  transform: scale(1.02);
 }
-.story-panel:hover img { transform: scale(1.07); }
-.story-scrim {
+.scene-media::after {
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(7,20,15,0.88) 0%, rgba(7,20,15,0.55) 48%, rgba(7,20,15,0.15) 100%);
+  background:
+    linear-gradient(90deg, rgba(7,20,15,0.88) 0%, rgba(7,20,15,0.58) 46%, rgba(7,20,15,0.22) 100%),
+    linear-gradient(180deg, rgba(7,20,15,0.15) 0%, rgba(7,20,15,0.55) 100%);
 }
-.story-panel.flip .story-scrim {
-  background: linear-gradient(270deg, rgba(7,20,15,0.88) 0%, rgba(7,20,15,0.55) 48%, rgba(7,20,15,0.15) 100%);
+.scene-right .scene-media::after {
+  background:
+    linear-gradient(270deg, rgba(7,20,15,0.88) 0%, rgba(7,20,15,0.58) 46%, rgba(7,20,15,0.22) 100%),
+    linear-gradient(180deg, rgba(7,20,15,0.15) 0%, rgba(7,20,15,0.55) 100%);
 }
-.story-copy {
+.scene-inner {
   position: relative;
   z-index: 1;
-  max-width: 420px;
-  padding: clamp(28px, 5vw, 48px);
+  width: 100%;
+}
+.scene-right .scene-inner {
+  display: flex;
+  justify-content: flex-end;
+}
+.scene-content {
+  max-width: 520px;
+  animation: floatIn 800ms var(--ease) both;
+}
+.scene-content h2 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
   color: #fff;
+  text-shadow: 0 10px 40px rgba(0,0,0,0.25);
 }
-.story-panel.flip .story-copy {
-  margin-left: auto;
-  text-align: left;
+.scene-content p {
+  margin: 0 0 22px;
+  color: rgba(255,255,255,0.88);
+  font-size: 1.08rem;
+  max-width: 40ch;
 }
-.story-eyebrow {
-  display: inline-block;
-  margin-bottom: 12px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--cmi-5);
-}
-.story-copy h3 {
-  margin: 0 0 12px;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  color: #fff;
-}
-.story-copy p {
-  margin: 0 0 18px;
-  color: rgba(255,255,255,0.86);
-  font-size: 1.02rem;
-}
-.story-points {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 8px;
-}
-.story-points li {
-  color: rgba(255,255,255,0.9);
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-.story-points li::before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--cmi-5);
-  margin-right: 10px;
-  vertical-align: middle;
-}
-@media (max-width: 720px) {
-  .story-scrim,
-  .story-panel.flip .story-scrim {
-    background: linear-gradient(180deg, rgba(7,20,15,0.2) 0%, rgba(7,20,15,0.88) 62%);
+@media (max-width: 760px) {
+  .scene {
+    min-height: 520px;
+    align-items: flex-end;
   }
-  .story-copy {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 360px;
+  .scene-media::after,
+  .scene-right .scene-media::after {
+    background: linear-gradient(180deg, rgba(7,20,15,0.2) 0%, rgba(7,20,15,0.55) 40%, rgba(7,20,15,0.92) 100%);
+  }
+  .scene-right .scene-inner {
+    justify-content: flex-start;
   }
 }
 
