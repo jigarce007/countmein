@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Terms and Conditions | CountMeIn</title>
 <meta name="description" content="Terms and Conditions for CountMeIn by Infinity Fintech Solutions.">
+<meta name="theme-color" content="#0faf83">
 <link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="stylesheet" href="brand.css">
 </head>
 <body class="legal-page">
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
   <div class="topbar-inner">
     <a class="brand-lockup" href="index.html">
@@ -31,7 +34,7 @@
   <div class="accent-line" aria-hidden="true"></div>
 </header>
 
-<div class="legal-shell">
+<div class="legal-shell" id="main">
   <div class="doc-card">
 <div class="sub">Infinity Fintech Solutions</div>
       </div>
@@ -251,7 +254,13 @@
 </div>
 <footer class="footer">
   <div class="container footer-row">
-    <div>© 2026 Infinity Fintech Solutions</div>
+    <div class="footer-brand">
+      <img src="logo.png" width="36" height="36" alt="">
+      <div>
+        <div class="brand-name">CountMeIn</div>
+        <div class="footer-meta">© 2026 Infinity Fintech Solutions</div>
+      </div>
+    </div>
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="privacy.html">Privacy</a>
@@ -263,14 +272,6 @@
 </footer>
 
 
-<script>
-  (function () {
-    var toggle = document.getElementById('nav-toggle');
-    if (!toggle) return;
-    document.querySelectorAll('.top-nav a').forEach(function (link) {
-      link.addEventListener('click', function () { toggle.checked = false; });
-    });
-  })();
-</script>
+<script src="site.js" defer></script>
 </body>
 </html>

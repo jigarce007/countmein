@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Contact &amp; Feedback | CountMeIn</title>
 <meta name="description" content="Send feedback or contact Infinity Fintech Solutions about CountMeIn.">
+<meta name="theme-color" content="#0faf83">
 <link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="stylesheet" href="brand.css">
 </head>
 <body class="legal-page">
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
   <div class="topbar-inner">
     <a class="brand-lockup" href="index.html">
@@ -30,7 +33,7 @@
   <div class="accent-line" aria-hidden="true"></div>
 </header>
 
-<div class="legal-shell">
+<div class="legal-shell" id="main">
   <div class="doc-card form-panel">
     <h1>Contact us</h1>
     <p class="legal-meta">Questions, bugs, ideas, or privacy requests—send a note and we’ll get back to you.</p>
@@ -74,13 +77,19 @@
       </div>
       <p class="form-hint">By submitting, you agree we may use your details only to respond, per our <a href="privacy.html">Privacy Policy</a>.</p>
     </form>
-    <p id="sentNote" style="display:none;color:#127a5c;font-weight:700;margin-top:18px">Thanks — your message was sent.</p>
+    <p id="sentNote" class="toast-sent" hidden>Thanks — your message was sent. We’ll get back to you soon.</p>
   </div>
 </div>
 
 <footer class="footer">
   <div class="container footer-row">
-    <div>© 2026 Infinity Fintech Solutions</div>
+    <div class="footer-brand">
+      <img src="logo.png" width="36" height="36" alt="">
+      <div>
+        <div class="brand-name">CountMeIn</div>
+        <div class="footer-meta">© 2026 Infinity Fintech Solutions</div>
+      </div>
+    </div>
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="privacy.html">Privacy</a>
@@ -95,14 +104,6 @@
   }
 </script>
 
-<script>
-  (function () {
-    var toggle = document.getElementById('nav-toggle');
-    if (!toggle) return;
-    document.querySelectorAll('.top-nav a').forEach(function (link) {
-      link.addEventListener('click', function () { toggle.checked = false; });
-    });
-  })();
-</script>
+<script src="site.js" defer></script>
 </body>
 </html>
