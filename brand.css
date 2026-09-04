@@ -673,12 +673,6 @@ h1, h2, h3, .brand-name {
   .section-head.center {
     text-align: left;
   }
-  .finale {
-    min-height: min(480px, 80svh);
-  }
-  .finale-media::after {
-    background: linear-gradient(180deg, rgba(7,20,15,0.35), rgba(7,20,15,0.92));
-  }
   .finale-copy {
     max-width: none;
   }
