@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | CountMeIn</title>
-<meta name="description" content="Privacy Policy describing how the CountMeIn mobile application collects, uses, and protects your data.">
+<meta name="description" content="Privacy Policy for the CountMeIn expense tracking and bill-splitting app operated by Infinity Fintech Solutions.">
 <style>
+
   :root {
     --bg: #ffffff;
     --text: #1a1a1a;
@@ -30,28 +31,6 @@
       --code-bg: #1c2027;
     }
   }
-  :root[data-theme="dark"] {
-    --bg: #12151a;
-    --text: #e8e8e8;
-    --muted: #a0a0a0;
-    --border: #2c313a;
-    --accent: #6fcbb0;
-    --accent-bg: #182420;
-    --warn-bg: #2a2410;
-    --warn-border: #6b5a1c;
-    --code-bg: #1c2027;
-  }
-  :root[data-theme="light"] {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #5a5a5a;
-    --border: #e2e2e2;
-    --accent: #1e5f4f;
-    --accent-bg: #eef6f3;
-    --warn-bg: #fff7e6;
-    --warn-border: #f0c766;
-    --code-bg: #f5f5f5;
-  }
   * { box-sizing: border-box; }
   body {
     margin: 0;
@@ -60,25 +39,10 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
   }
-  .wrap {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 48px 24px 96px;
-  }
-  header.doc-header {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 24px;
-    margin-bottom: 32px;
-  }
-  h1 {
-    font-size: 1.9rem;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
-  }
-  .meta {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px 96px; }
+  header.doc-header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 0.92rem; }
   .meta strong { color: var(--text); }
   .notice {
     background: var(--warn-bg);
@@ -88,6 +52,12 @@
     font-size: 0.92rem;
     margin: 20px 0 0;
   }
+  .legal-nav {
+    display: flex; flex-wrap: wrap; gap: 10px 16px;
+    margin: 16px 0 0; font-size: 0.9rem;
+  }
+  .legal-nav a { color: var(--accent); text-decoration: none; }
+  .legal-nav a:hover { text-decoration: underline; }
   nav.toc {
     background: var(--accent-bg);
     border-radius: 10px;
@@ -102,20 +72,10 @@
     color: var(--muted);
     margin: 0 0 10px;
   }
-  nav.toc ol {
-    columns: 2;
-    margin: 0;
-    padding-left: 20px;
-  }
-  nav.toc a {
-    color: var(--text);
-    text-decoration: none;
-  }
+  nav.toc ol { columns: 2; margin: 0; padding-left: 20px; }
+  nav.toc a { color: var(--text); text-decoration: none; }
   nav.toc a:hover { color: var(--accent); text-decoration: underline; }
-  section {
-    margin: 36px 0;
-    scroll-margin-top: 16px;
-  }
+  section { margin: 36px 0; scroll-margin-top: 16px; }
   h2 {
     font-size: 1.2rem;
     border-bottom: 1px solid var(--border);
@@ -123,17 +83,11 @@
     margin: 0 0 14px;
   }
   h2 .num { color: var(--accent); margin-right: 8px; }
-  h3 {
-    font-size: 1rem;
-    margin: 20px 0 8px;
-  }
+  h3 { font-size: 1rem; margin: 20px 0 8px; }
   p { margin: 0 0 12px; }
   ul, ol { margin: 0 0 12px; padding-left: 22px; }
   li { margin-bottom: 6px; }
-  strong.caps {
-    text-transform: uppercase;
-    font-size: 0.94em;
-  }
+  strong.caps { text-transform: uppercase; font-size: 0.94em; }
   .allcaps-block {
     background: var(--code-bg);
     border-left: 3px solid var(--accent);
@@ -158,37 +112,29 @@
     color: var(--muted);
     font-size: 0.85rem;
   }
-  .back-top {
-    display: inline-block;
-    margin-top: 40px;
-    font-size: 0.85rem;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-    margin: 12px 0;
-  }
-  th, td {
-    text-align: left;
-    padding: 8px 10px;
-    border: 1px solid var(--border);
-    vertical-align: top;
-  }
+  .back-top { display: inline-block; margin-top: 40px; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid var(--border); vertical-align: top; }
   th { background: var(--accent-bg); }
+
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="top">
 
   <header class="doc-header">
     <h1>Privacy Policy</h1>
     <p class="meta">
       <strong>CountMeIn</strong> — operated by <strong>Infinity Fintech Solutions</strong><br>
-      Effective date: <strong>August 21, 2026</strong> &nbsp;|&nbsp; Last updated: <strong>August 21, 2026</strong>
+      Effective date: <strong>September 4, 2026</strong> &nbsp;|&nbsp; Last updated: <strong>September 4, 2026</strong>
     </p>
+    <nav class="legal-nav" aria-label="Legal documents">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="copyright.html">Copyright</a>
+    </nav>
     <div class="notice">
-      This Privacy Policy explains what information the CountMeIn mobile application ("App," "Service") collects, how it is used, stored, shared, and protected, and the choices available to you. By downloading, installing, or using the App, you consent to the data practices described in this Policy. This Policy should be read together with our <a href="terms.html">Terms and Conditions</a>.
+      This Privacy Policy explains what information the CountMeIn mobile application and related websites ("App," "Service") collect, how that information is used, stored, shared, and protected, and the choices available to you. By creating an account or using the Service, you agree to this Policy. Read it together with our <a href="terms.html">Terms and Conditions</a> and <a href="copyright.html">Copyright Notice</a>.
     </div>
   </header>
 
@@ -199,27 +145,31 @@
       <li><a href="#data-collect">Information We Collect</a></li>
       <li><a href="#how-collect">How Information Is Collected</a></li>
       <li><a href="#use">How We Use Information</a></li>
-      <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+      <li><a href="#legal-basis">Legal Basis</a></li>
       <li><a href="#sharing">How We Share Information</a></li>
-      <li><a href="#groups">Groups &amp; Chat Data</a></li>
-      <li><a href="#third-party-sdks">Third-Party Services &amp; SDKs</a></li>
-      <li><a href="#ads">Advertising &amp; AdMob</a></li>
+      <li><a href="#groups">Groups, Chat &amp; Shared Data</a></li>
+      <li><a href="#receipts">Receipts, OCR &amp; Media</a></li>
+      <li><a href="#location">Location Features</a></li>
+      <li><a href="#payments">Payment Handles &amp; Settlements</a></li>
+      <li><a href="#third-party-sdks">Third-Party Services</a></li>
+      <li><a href="#ads">Advertising</a></li>
       <li><a href="#permissions">Device Permissions</a></li>
-      <li><a href="#retention">Data Retention</a></li>
-      <li><a href="#security">Data Security</a></li>
+      <li><a href="#retention">Retention</a></li>
+      <li><a href="#security">Security</a></li>
       <li><a href="#rights">Your Rights &amp; Choices</a></li>
       <li><a href="#children">Children's Privacy</a></li>
-      <li><a href="#transfers">International Data Transfers</a></li>
+      <li><a href="#transfers">International Transfers</a></li>
       <li><a href="#deletion">Account &amp; Data Deletion</a></li>
-      <li><a href="#changes">Changes to This Policy</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ol>
   </nav>
 
   <section id="overview">
     <h2><span class="num">1.</span>Overview</h2>
-    <p>CountMeIn is a personal and group expense-tracking application. This Policy applies to all users of the App and describes our practices regarding personal data processed through the App, its cloud backend (Google Firebase), and associated third-party services (advertising and in-app billing).</p>
-    <p>We act as the data controller for personal data processed through the App, except where a third-party service provider (such as Google) acts as an independent controller for data it collects directly, as described in Section 8.</p>
+    <p>CountMeIn is a personal and shared expense-tracking application for users worldwide. It helps you log personal spending, manage budgets and analytics, create or join groups, split expenses (including itemized receipt splits and live item claims), settle balances, use optional features such as Spot Me IOUs, recurring expenses, referrals, home-screen widgets, and optional CountMeIn Pro subscriptions.</p>
+    <p>We act as the data controller for personal data we process through the Service, except where a third-party provider (for example Google) acts as an independent controller for data it collects under its own policies, as described below.</p>
+    <p><strong>Important:</strong> CountMeIn is a record-keeping and coordination tool. We are not a bank, payment institution, or money transmitter. We do not hold user funds or execute peer-to-peer transfers inside the App.</p>
   </section>
 
   <section id="data-collect">
@@ -227,152 +177,157 @@
     <h3>2.1 Information You Provide</h3>
     <table>
       <tr><th>Category</th><th>Examples</th></tr>
-      <tr><td>Display name &amp; group profile</td><td>A display name and, optionally, a group photo you set within a Group. The App does not require an email address, phone number, or password, and does not use Google Sign-In or any third-party account login</td></tr>
-      <tr><td>Financial records</td><td>Expense entries, amounts, categories, notes, dates, budgets, and other data you manually enter</td></tr>
-      <tr><td>Group data</td><td>Group names, group photos (camera or gallery), member lists, invitations, split/settlement details</td></tr>
-      <tr><td>Chat messages</td><td>Text messages and content you send within group chat</td></tr>
-      <tr><td>Support communications</td><td>Information you provide when you contact us for support (e.g., your email address, if you choose to email us)</td></tr>
+      <tr><td>Account &amp; profile</td><td>Email address, password (stored hashed via Firebase Authentication), Google account identifiers if you use Google Sign-In, display name, profile photo, preferred currency, language, and theme settings</td></tr>
+      <tr><td>Financial records you enter</td><td>Personal and group expenses, amounts, categories (including custom categories), notes, dates, budgets/spending caps, recurring expenses, analytics preferences</td></tr>
+      <tr><td>Group &amp; social data</td><td>Group names, photos, join codes/links, member lists, split methods (equal, custom, income-weighted, itemized), settlements, Settle-up Day preferences, Spot Me IOUs, referral codes</td></tr>
+      <tr><td>Chat &amp; communications</td><td>Group chat messages and related metadata; support emails you send us</td></tr>
+      <tr><td>Receipts &amp; media</td><td>Photos or images you capture/upload for receipts, group photos, or similar features; OCR-derived totals and line items</td></tr>
+      <tr><td>Payment handles</td><td>Optional settlement identifiers you choose to save (for example UPI ID, Venmo, PayPal, PayNow, DuitNow, Pix, bank-transfer labels, and similar). These are user-provided handles for convenience—not bank card or full account credentials collected by us for payment processing</td></tr>
     </table>
     <h3>2.2 Information Collected Automatically</h3>
     <table>
       <tr><th>Category</th><th>Examples</th></tr>
-      <tr><td>Device &amp; app data</td><td>Device model, OS version, app version, language/locale, crash logs, performance data</td></tr>
-      <tr><td>Usage data</td><td>Feature interactions, screens viewed, session duration, in-app events (via Firebase Analytics)</td></tr>
-      <tr><td>Identifiers</td><td>An anonymous Firebase Authentication ID and Firebase installation ID tied to your app installation (not linked to your name or email), push notification token (FCM), advertising ID (for ad-supported free tier)</td></tr>
-      <tr><td>Network data</td><td>IP address (processed transiently by our cloud infrastructure and service providers for security and delivery purposes)</td></tr>
+      <tr><td>Device &amp; app data</td><td>Device model, OS version, app version, language/locale, crash logs, diagnostics, performance data</td></tr>
+      <tr><td>Usage data</td><td>Feature interactions, screens viewed, session metrics, in-app events (Firebase Analytics) and crash reports (Crashlytics)</td></tr>
+      <tr><td>Identifiers</td><td>Firebase Auth UID, Firebase installation ID, FCM push token, advertising ID (ad-supported free tier), App Check attestation signals</td></tr>
+      <tr><td>Network data</td><td>IP address processed by our cloud providers for security, delivery, and abuse prevention</td></tr>
+      <tr><td>Approximate location (optional)</td><td>If you enable location-triggered prompts, approximate/foreground location may be processed on-device or as needed to show optional expense reminders. See Section 9</td></tr>
     </table>
-    <p>Because the App uses anonymous authentication tied to your device installation, we generally cannot independently identify you by name, email, or phone number unless you voluntarily provide that information (for example, by emailing us for support, or by entering identifying information into a display name, expense note, or chat message).</p>
-    <h3>2.3 Information We Do Not Collect</h3>
-    <p>We do not request or store bank account numbers, card numbers, or other direct payment credentials. Any in-app purchase is processed entirely by Google Play Billing; we only receive confirmation of purchase status, not your payment details.</p>
+    <h3>2.3 Information We Do Not Collect / Process as a Payment Provider</h3>
+    <p>We do not request full bank account numbers or payment card numbers to move money between users. In-app purchases (CountMeIn Pro) are processed by Google Play Billing (and, where applicable, Apple In-App Purchase). We receive entitlement/purchase status, not your full payment card details.</p>
   </section>
 
   <section id="how-collect">
     <h2><span class="num">3.</span>How Information Is Collected</h2>
     <ul>
-      <li><strong>Directly from you</strong> — when you set a display name, enter expenses, create or join a group, send a chat message, or contact support.</li>
-      <li><strong>Automatically</strong> — Firebase assigns your device an anonymous authentication identity and installation ID the first time you open the App, with no email or account sign-in required; the App's use of Firebase SDKs (Analytics, crash/performance logging, App Check) also collects usage and diagnostic data as you use the Service.</li>
-      <li><strong>From third parties</strong> — Google Play (purchase confirmation for CountMeIn Pro, advertising identifiers for the ad-supported free tier).</li>
+      <li><strong>Directly from you</strong> — registration, profile setup, expenses, groups, chat, uploads, payment handles, referrals, and support requests.</li>
+      <li><strong>Automatically</strong> — when you use the App, through authentication, analytics, crash reporting, App Check, notifications, and (if enabled) location prompts.</li>
+      <li><strong>From third parties</strong> — Google Sign-In profile basics you authorize; Google Play / App Store purchase confirmations; ad networks for the free tier.</li>
+      <li><strong>On-device processing</strong> — receipt text recognition / OCR may run on your device using on-device libraries; derived amounts or line items may then be saved to your account or group if you confirm them.</li>
     </ul>
   </section>
 
   <section id="use">
     <h2><span class="num">4.</span>How We Use Information</h2>
-    <p>We use the information we collect to:</p>
     <ul>
-      <li>Provide, operate, maintain, and sync the core expense-tracking and group features of the Service;</li>
-      <li>Authenticate your identity and secure your account;</li>
-      <li>Enable group creation, membership, expense splitting, settlement calculations, and group chat;</li>
-      <li>Send push notifications relevant to your account or groups (e.g., new expense, group invite, chat message);</li>
-      <li>Process and validate in-app purchases and manage CountMeIn Pro entitlements;</li>
-      <li>Serve advertisements in the free tier of the App via Google AdMob;</li>
-      <li>Monitor, analyze, and improve App performance, stability, and features (via Firebase Analytics and crash reporting);</li>
-      <li>Detect, investigate, and prevent fraud, abuse, security incidents, and violations of our Terms;</li>
-      <li>Comply with applicable legal obligations and enforce our Terms and Conditions.</li>
+      <li>Provide, operate, sync, and improve personal expense tracking, budgets, analytics, recurring expenses, widgets, and related features;</li>
+      <li>Enable groups, invitations, splits (including itemized and live item claim), settlements, Spot Me, chat, and notifications;</li>
+      <li>Authenticate users, secure accounts, and prevent fraud, abuse, and unauthorized clients (including App Check);</li>
+      <li>Process optional Pro subscriptions and manage entitlements/referral rewards;</li>
+      <li>Serve and measure advertisements on free tiers;</li>
+      <li>Analyze stability and usage to fix bugs and improve the product;</li>
+      <li>Provide optional location-based expense reminders when you opt in;</li>
+      <li>Comply with law and enforce our Terms.</li>
     </ul>
-    <p>We do not sell your personal data. We do not use your expense content, financial data, or chat messages to train third-party advertising models, and we do not share your raw financial data with advertisers.</p>
+    <p>We do <strong>not</strong> sell your personal data. We do not use your expense amounts, chat contents, or receipt images to sell personalized ads based on the contents of those records.</p>
   </section>
 
   <section id="legal-basis">
     <h2><span class="num">5.</span>Legal Basis for Processing</h2>
-    <p>Where applicable data protection law requires a legal basis, we process personal data on the following grounds: (a) performance of a contract, to provide the Service you requested; (b) your consent, for example for notifications, camera access, or advertising identifiers, which you may withdraw at any time via device settings; (c) legitimate interests, such as securing the Service, preventing fraud, and improving the App; and (d) compliance with legal obligations, where required.</p>
+    <p>Where required (for example under GDPR or similar laws), we process data based on: (a) performance of a contract to provide the Service; (b) consent (notifications, camera/photos, location, certain advertising identifiers—withdrawable in device or App settings); (c) legitimate interests such as security, fraud prevention, and product improvement; and (d) legal obligations.</p>
   </section>
 
   <section id="sharing">
     <h2><span class="num">6.</span>How We Share Information</h2>
-    <p>We do not sell your personal data to third parties. We may share information as follows:</p>
     <ul>
-      <li><strong>With other users of a Group</strong> — expense data, split/settlement information, group chat messages, and your name/profile photo are visible to other members of any Group you join, as described in Section 7;</li>
-      <li><strong>With service providers</strong> — Google Firebase (authentication, database, storage, messaging, functions, analytics, app integrity), Google Play (billing), and Google AdMob (advertising), each of which processes data under its own privacy terms as our processor or, for advertising, as an independent controller;</li>
-      <li><strong>For legal reasons</strong> — where required to comply with applicable law, legal process, or governmental request, or to protect the rights, property, or safety of Infinity Fintech Solutions, our users, or the public;</li>
-      <li><strong>Business transfers</strong> — in connection with a merger, acquisition, financing, or sale of assets, personal data may be transferred as part of that transaction, subject to standard confidentiality arrangements.</li>
+      <li><strong>Other group members</strong> — profile details, expenses, splits, settlements, chat, and related content in groups you join are visible to those members;</li>
+      <li><strong>Service providers</strong> — Google Firebase (Auth, Firestore, Storage, Cloud Messaging, Cloud Functions, Analytics, Crashlytics, App Check), Google Play / App Store billing, Google AdMob, and similar infrastructure providers;</li>
+      <li><strong>Legal / safety</strong> — when required by law or to protect rights, safety, and security;</li>
+      <li><strong>Business transfers</strong> — in a merger, acquisition, or asset sale, subject to appropriate safeguards.</li>
     </ul>
   </section>
 
   <section id="groups">
-    <h2><span class="num">7.</span>Groups &amp; Chat Data</h2>
-    <p>Group features are, by design, shared and collaborative. If you create or join a Group:</p>
-    <ul>
-      <li>Your name, profile photo, expense entries, and chat messages posted within that Group are visible to all current members of the Group, and may remain visible to members who joined the Group after the content was posted;</li>
-      <li>Group administrators may be able to remove members or delete the Group, which may permanently delete associated data for all members;</li>
-      <li>We store Group data (including chat messages) on Google Firebase/Firestore to enable real-time synchronization across members' devices;</li>
-      <li>We do not actively monitor the content of group chat messages, but we may access stored data as necessary to operate the Service, respond to abuse reports, enforce our Terms, or comply with legal obligations.</li>
-    </ul>
-    <p>You should not share sensitive personal, financial account, or identity information within group chat, as it is visible to other group members.</p>
+    <h2><span class="num">7.</span>Groups, Chat &amp; Shared Data</h2>
+    <p>Shared features are collaborative by design. Content you post in a group may remain visible to current and future members. Group admins/hosts may manage membership and group settings. We do not continuously moderate chat, but may access stored data to operate the Service, investigate abuse, enforce Terms, or comply with law.</p>
+    <p>Do not post passwords, full payment card numbers, government ID numbers, or other highly sensitive data in chat or expense notes.</p>
+  </section>
+
+  <section id="receipts">
+    <h2><span class="num">8.</span>Receipts, OCR &amp; Media</h2>
+    <p>If you scan or upload a receipt or photo: (a) the image may be processed on-device and/or uploaded to secure cloud storage associated with your account or group; (b) OCR results can be inaccurate—you are responsible for reviewing totals and line items before saving; (c) receipt images shared in a group context may be visible to group members.</p>
+  </section>
+
+  <section id="location">
+    <h2><span class="num">9.</span>Location Features</h2>
+    <p>Location-triggered expense prompts are optional and, where offered, intended for foreground use while you are using the App. We do not require location to use core expense or group features. You can deny or revoke location permission in system settings; doing so disables location-based prompts.</p>
+  </section>
+
+  <section id="payments">
+    <h2><span class="num">10.</span>Payment Handles &amp; Settlements</h2>
+    <p>Optional payment handles help other users know how to pay you outside the App. Settlements between users occur outside CountMeIn. We do not verify that an external payment was completed unless you mark it as settled in the App. Handles you save may be visible to relevant group members for settle-up convenience.</p>
   </section>
 
   <section id="third-party-sdks">
-    <h2><span class="num">8.</span>Third-Party Services &amp; SDKs</h2>
-    <p>The App integrates the following third-party services, each governed by its own privacy policy:</p>
+    <h2><span class="num">11.</span>Third-Party Services &amp; SDKs</h2>
     <table>
       <tr><th>Provider</th><th>Purpose</th><th>Policy</th></tr>
-      <tr><td>Google Firebase (Auth, Firestore, Storage, Cloud Messaging, Cloud Functions, Analytics, App Check)</td><td>Authentication, data sync/storage, push notifications, backend logic, usage analytics, anti-abuse device attestation</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-      <tr><td>Google Play Billing</td><td>Processing in-app purchases (CountMeIn Pro)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
-      <tr><td>Google AdMob</td><td>Serving advertisements in the free tier</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></td></tr>
+      <tr><td>Google Firebase (Auth, Firestore, Storage, FCM, Functions, Analytics, Crashlytics, App Check)</td><td>Accounts, sync, media, notifications, backend, analytics, crash reporting, anti-abuse</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr>
+      <tr><td>Google Sign-In</td><td>Optional account login</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr>
+      <tr><td>Google Play Billing / App Store</td><td>Pro subscriptions and entitlements</td><td>Applicable store privacy terms</td></tr>
+      <tr><td>Google AdMob</td><td>Ads on free tier</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads / AdMob</a></td></tr>
+      <tr><td>On-device ML / OCR libraries</td><td>Receipt text recognition</td><td>As provided by the library vendor (often on-device)</td></tr>
     </table>
-    <p>We are not responsible for the independent data practices of these third-party providers. We encourage you to review their respective privacy policies.</p>
   </section>
 
   <section id="ads">
-    <h2><span class="num">9.</span>Advertising &amp; AdMob</h2>
-    <p>The free tier of the App displays advertisements served by Google AdMob. AdMob may collect and use device identifiers (such as your advertising ID), approximate location, and app usage data to serve and measure ads, including personalized ads where permitted. You can opt out of personalized advertising, or reset/limit your advertising identifier, through your device's operating system settings (e.g., Android <em>Settings &gt; Privacy &gt; Ads</em>).</p>
-    <p>Upgrading to CountMeIn Pro removes in-app advertisements and the associated ad-serving data collection.</p>
+    <h2><span class="num">12.</span>Advertising &amp; AdMob</h2>
+    <p>The free tier may show ads (including rewarded ads for certain actions). AdMob and partners may use advertising identifiers and related signals to serve and measure ads, including personalized ads where allowed. You can limit ad personalization in device settings. CountMeIn Pro removes in-app ads where stated in the App.</p>
   </section>
 
   <section id="permissions">
-    <h2><span class="num">10.</span>Device Permissions</h2>
+    <h2><span class="num">13.</span>Device Permissions</h2>
     <table>
       <tr><th>Permission</th><th>Purpose</th></tr>
-      <tr><td>Internet / Network State</td><td>Required to sync data with our cloud backend and load advertisements</td></tr>
-      <tr><td>Notifications</td><td>To deliver push notifications for group activity, invites, and reminders</td></tr>
-      <tr><td>Camera</td><td>Optional — used only if you choose to take a photo for a group's picture; the App does not access the camera without your explicit action</td></tr>
+      <tr><td>Internet / network</td><td>Sync, auth, ads, updates</td></tr>
+      <tr><td>Notifications</td><td>Group activity, chat, reminders, Settle-up Day, spending alerts</td></tr>
+      <tr><td>Camera / photos</td><td>Optional receipts, group/profile photos</td></tr>
+      <tr><td>Location (optional)</td><td>Optional expense prompts only</td></tr>
     </table>
-    <p>You may deny or revoke any of these permissions at any time through your device settings; doing so may limit certain features of the App.</p>
   </section>
 
   <section id="retention">
-    <h2><span class="num">11.</span>Data Retention</h2>
-    <p>We retain personal data for as long as your account remains active and as necessary to provide the Service. Group data (including chat messages) is retained for as long as the Group exists or until removed by a Group administrator. We may retain certain data for a limited period after account deletion where necessary to comply with legal obligations, resolve disputes, enforce our agreements, or as reflected in routine backup cycles, after which it is deleted or anonymized.</p>
+    <h2><span class="num">14.</span>Data Retention</h2>
+    <p>We retain account and service data while your account is active and as needed to provide the Service. Group content may persist while the group exists or while needed by other members. After deletion requests, we delete or anonymize personal data within a reasonable period, except where retention is required for legal, security, dispute, or backup purposes.</p>
   </section>
 
   <section id="security">
-    <h2><span class="num">12.</span>Data Security</h2>
-    <p>We implement reasonable technical and organizational measures designed to protect personal data, including encryption in transit, access controls, Firebase Security Rules restricting data access to authorized users, and device attestation (App Check) to reduce abuse from unauthorized clients. However, no method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security. You are responsible for maintaining the security of your device and account credentials.</p>
+    <h2><span class="num">15.</span>Data Security</h2>
+    <p>We use reasonable technical and organizational measures, including encryption in transit, access controls, Firebase Security Rules, and App Check. No method of transmission or storage is 100% secure. You are responsible for protecting your device, account credentials, and Google account.</p>
   </section>
 
   <section id="rights">
-    <h2><span class="num">13.</span>Your Rights &amp; Choices</h2>
-    <p>Depending on your jurisdiction, you may have the right to: access the personal data we hold about you; request correction of inaccurate data; request deletion of your data; object to or restrict certain processing; and request a copy of your data in a portable format. To exercise any of these rights, contact us using the details in Section 18. We will respond within a reasonable timeframe and in accordance with applicable law. We may need to verify your identity before fulfilling a request.</p>
+    <h2><span class="num">16.</span>Your Rights &amp; Choices</h2>
+    <p>Depending on your location, you may have rights to access, correct, delete, port, or restrict/object to certain processing of your personal data, and to withdraw consent. Contact us (Section 21). You can also manage notifications, permissions, ad settings, and in-app account deletion where available. We may verify identity before fulfilling requests.</p>
   </section>
 
   <section id="children">
-    <h2><span class="num">14.</span>Children's Privacy</h2>
-    <p>The Service is not directed to children under 13, and we do not knowingly collect personal data from children under 13. Users between 13 and the age of legal majority may use the Service only with parental or guardian consent, as described in our Terms and Conditions. If we become aware that we have collected personal data from a child under 13 without appropriate consent, we will take steps to delete such data promptly. Parents or guardians who believe their child has provided personal data to us without consent should contact us using the details in Section 18.</p>
+    <h2><span class="num">17.</span>Children's Privacy</h2>
+    <p>The Service is not directed to children under 13, and we do not knowingly collect personal data from children under 13. If you are under the age of legal majority where you live, use the Service only with a parent/guardian's consent. Contact us to request deletion of data collected from a child under 13 without proper consent.</p>
   </section>
 
   <section id="transfers">
-    <h2><span class="num">15.</span>International Data Transfers</h2>
-    <p>Your information may be stored and processed on servers located outside your country of residence, including in the United States and other countries where our service providers (such as Google Firebase) maintain infrastructure. By using the Service, you consent to the transfer of your information to these countries, which may have data protection laws different from those of your jurisdiction. We rely on the safeguards implemented by our service providers to protect data transferred internationally.</p>
+    <h2><span class="num">18.</span>International Data Transfers</h2>
+    <p>CountMeIn is offered internationally. Data may be processed in countries where we or our providers operate (including outside your country of residence). Those countries may have different data-protection laws. We rely on appropriate provider safeguards for such transfers.</p>
   </section>
 
   <section id="deletion">
-    <h2><span class="num">16.</span>Account &amp; Data Deletion</h2>
-    <p>CountMeIn does not use email/password or third-party sign-in accounts; each installation of the App is identified only by an anonymous, device-bound Firebase identity as described in Section 2. As a result, "account deletion" works differently than in apps with traditional logins:</p>
+    <h2><span class="num">19.</span>Account &amp; Data Deletion</h2>
     <ul>
-      <li><strong>On-device data</strong> — you can remove all locally stored data at any time by uninstalling the App or clearing its app storage from your device settings. This ends your current anonymous session; a new, unrelated anonymous identity is created if you reinstall or reopen the App.</li>
-      <li><strong>Cloud-synced data</strong> — uninstalling the App does not automatically delete data already synced to our cloud backend (such as Groups you created or joined, expense entries, and chat messages), because this data may still be needed by, or visible to, other members of your Groups.</li>
-      <li><strong>Requesting cloud data deletion</strong> — to request deletion of the data associated with your device's anonymous identity from our backend, contact us at the email in Section 18 with reasonably identifying details (e.g., Group name(s), display name(s) used, and approximate dates of use) so we can locate and delete it. We will process valid requests within a reasonable period, except where retention is required to comply with legal obligations, resolve disputes, or enforce our agreements.</li>
+      <li>Use in-app account deletion where available, or email us at the address below.</li>
+      <li>Deleting your account removes or anonymizes personal account data we control, subject to legal/backup exceptions.</li>
+      <li>Content you shared in groups (expenses, chat, photos) may remain visible to other members until removed by group processes or separate requests where feasible.</li>
+      <li>Uninstalling the App alone does not always delete cloud data needed by other group members.</li>
     </ul>
-    <p>Please note that content you shared within a Group (such as chat messages or expense entries already visible to other members) may remain visible to those members even after your underlying data is deleted from our backend, unless separately removed by a Group administrator.</p>
   </section>
 
   <section id="changes">
-    <h2><span class="num">17.</span>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. The updated version will be indicated by a revised "Last updated" date at the top of this page. Material changes may be communicated through the App or other reasonable means. Your continued use of the Service after changes become effective constitutes your acceptance of the revised Policy.</p>
+    <h2><span class="num">20.</span>Changes to This Policy</h2>
+    <p>We may update this Policy from time to time. The "Last updated" date will change accordingly. Material changes may be highlighted in the App or by other reasonable means. Continued use after an update means you accept the revised Policy.</p>
   </section>
 
   <section id="contact">
-    <h2><span class="num">18.</span>Contact Us</h2>
-    <p>For questions, requests, or concerns regarding this Privacy Policy or our data practices, contact:</p>
+    <h2><span class="num">21.</span>Contact Us</h2>
     <table>
       <tr><th>Entity</th><td>Infinity Fintech Solutions</td></tr>
       <tr><th>App</th><td>CountMeIn</td></tr>
@@ -381,9 +336,9 @@
   </section>
 
   <a class="back-top" href="#top">↑ Back to top</a>
-
   <footer>
-    <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved. This document does not constitute legal advice; consult a qualified attorney to ensure this Policy fully meets your specific legal and regulatory obligations (including GDPR, CCPA, or India's DPDP Act, as applicable) before relying on it in production.</p>
+    <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved. CountMeIn and related marks are trademarks of Infinity Fintech Solutions. These pages are provided for transparency and compliance; they do not constitute legal advice. Please consult a qualified attorney for advice specific to your situation.</p>
+    <p class="legal-nav"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="copyright.html">Copyright</a></p>
   </footer>
 
 </div>

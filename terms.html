@@ -1,11 +1,12 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terms and Conditions | CountMeIn</title>
-<meta name="description" content="Terms and Conditions governing use of the CountMeIn mobile application.">
+<meta name="description" content="Terms and Conditions governing use of the CountMeIn mobile application operated by Infinity Fintech Solutions.">
 <style>
+
   :root {
     --bg: #ffffff;
     --text: #1a1a1a;
@@ -30,28 +31,6 @@
       --code-bg: #1c2027;
     }
   }
-  :root[data-theme="dark"] {
-    --bg: #12151a;
-    --text: #e8e8e8;
-    --muted: #a0a0a0;
-    --border: #2c313a;
-    --accent: #6fcbb0;
-    --accent-bg: #182420;
-    --warn-bg: #2a2410;
-    --warn-border: #6b5a1c;
-    --code-bg: #1c2027;
-  }
-  :root[data-theme="light"] {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #5a5a5a;
-    --border: #e2e2e2;
-    --accent: #1e5f4f;
-    --accent-bg: #eef6f3;
-    --warn-bg: #fff7e6;
-    --warn-border: #f0c766;
-    --code-bg: #f5f5f5;
-  }
   * { box-sizing: border-box; }
   body {
     margin: 0;
@@ -60,25 +39,10 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
   }
-  .wrap {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 48px 24px 96px;
-  }
-  header.doc-header {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 24px;
-    margin-bottom: 32px;
-  }
-  h1 {
-    font-size: 1.9rem;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
-  }
-  .meta {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px 96px; }
+  header.doc-header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 0.92rem; }
   .meta strong { color: var(--text); }
   .notice {
     background: var(--warn-bg);
@@ -88,6 +52,12 @@
     font-size: 0.92rem;
     margin: 20px 0 0;
   }
+  .legal-nav {
+    display: flex; flex-wrap: wrap; gap: 10px 16px;
+    margin: 16px 0 0; font-size: 0.9rem;
+  }
+  .legal-nav a { color: var(--accent); text-decoration: none; }
+  .legal-nav a:hover { text-decoration: underline; }
   nav.toc {
     background: var(--accent-bg);
     border-radius: 10px;
@@ -102,20 +72,10 @@
     color: var(--muted);
     margin: 0 0 10px;
   }
-  nav.toc ol {
-    columns: 2;
-    margin: 0;
-    padding-left: 20px;
-  }
-  nav.toc a {
-    color: var(--text);
-    text-decoration: none;
-  }
+  nav.toc ol { columns: 2; margin: 0; padding-left: 20px; }
+  nav.toc a { color: var(--text); text-decoration: none; }
   nav.toc a:hover { color: var(--accent); text-decoration: underline; }
-  section {
-    margin: 36px 0;
-    scroll-margin-top: 16px;
-  }
+  section { margin: 36px 0; scroll-margin-top: 16px; }
   h2 {
     font-size: 1.2rem;
     border-bottom: 1px solid var(--border);
@@ -123,17 +83,11 @@
     margin: 0 0 14px;
   }
   h2 .num { color: var(--accent); margin-right: 8px; }
-  h3 {
-    font-size: 1rem;
-    margin: 20px 0 8px;
-  }
+  h3 { font-size: 1rem; margin: 20px 0 8px; }
   p { margin: 0 0 12px; }
   ul, ol { margin: 0 0 12px; padding-left: 22px; }
   li { margin-bottom: 6px; }
-  strong.caps {
-    text-transform: uppercase;
-    font-size: 0.94em;
-  }
+  strong.caps { text-transform: uppercase; font-size: 0.94em; }
   .allcaps-block {
     background: var(--code-bg);
     border-left: 3px solid var(--accent);
@@ -158,232 +112,222 @@
     color: var(--muted);
     font-size: 0.85rem;
   }
-  .back-top {
-    display: inline-block;
-    margin-top: 40px;
-    font-size: 0.85rem;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-    margin: 12px 0;
-  }
-  th, td {
-    text-align: left;
-    padding: 8px 10px;
-    border: 1px solid var(--border);
-  }
+  .back-top { display: inline-block; margin-top: 40px; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid var(--border); vertical-align: top; }
   th { background: var(--accent-bg); }
+
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="top">
 
   <header class="doc-header">
     <h1>Terms and Conditions</h1>
     <p class="meta">
       <strong>CountMeIn</strong> — operated by <strong>Infinity Fintech Solutions</strong><br>
-      Effective date: <strong>August 21, 2026</strong> &nbsp;|&nbsp; Last updated: <strong>August 21, 2026</strong>
+      Effective date: <strong>September 4, 2026</strong> &nbsp;|&nbsp; Last updated: <strong>September 4, 2026</strong>
     </p>
+    <nav class="legal-nav" aria-label="Legal documents">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="copyright.html">Copyright</a>
+    </nav>
     <div class="notice">
-      By downloading, installing, accessing, or using the CountMeIn mobile application ("App"), you agree to be legally bound by these Terms and Conditions ("Terms"). If you do not agree, you must not use the App.
+      By downloading, installing, accessing, or using CountMeIn ("App," "Service"), you agree to these Terms and Conditions ("Terms"). If you do not agree, do not use the Service. These Terms work together with our <a href="privacy.html">Privacy Policy</a> and <a href="copyright.html">Copyright Notice</a>.
     </div>
   </header>
 
   <nav class="toc">
     <h2>Contents</h2>
     <ol>
-      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#acceptance">Acceptance</a></li>
       <li><a href="#eligibility">Eligibility</a></li>
-      <li><a href="#account">Accounts &amp; Security</a></li>
-      <li><a href="#description">Description of Service</a></li>
-      <li><a href="#groups">Groups, Chat &amp; User Content</a></li>
-      <li><a href="#acceptable-use">Acceptable Use</a></li>
-      <li><a href="#financial">Financial Data Disclaimer</a></li>
-      <li><a href="#subscriptions">Subscriptions, Purchases &amp; Ads</a></li>
+      <li><a href="#accounts">Accounts &amp; Security</a></li>
+      <li><a href="#license">License</a></li>
+      <li><a href="#service">Description of Service</a></li>
+      <li><a href="#user-content">User Content</a></li>
+      <li><a href="#groups">Groups, Chat &amp; Social Features</a></li>
+      <li><a href="#financial">No Financial Services Disclaimer</a></li>
+      <li><a href="#ocr">Receipts &amp; OCR</a></li>
+      <li><a href="#location">Location Features</a></li>
+      <li><a href="#pro">Subscriptions, Ads &amp; Referrals</a></li>
+      <li><a href="#acceptable">Acceptable Use</a></li>
       <li><a href="#ip">Intellectual Property</a></li>
       <li><a href="#third-party">Third-Party Services</a></li>
-      <li><a href="#termination">Suspension &amp; Termination</a></li>
-      <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+      <li><a href="#suspension">Suspension &amp; Termination</a></li>
+      <li><a href="#disclaimers">Disclaimers</a></li>
       <li><a href="#liability">Limitation of Liability</a></li>
       <li><a href="#indemnity">Indemnification</a></li>
-      <li><a href="#arbitration">Dispute Resolution &amp; Arbitration</a></li>
+      <li><a href="#arbitration">Dispute Resolution</a></li>
       <li><a href="#governing-law">Governing Law</a></li>
-      <li><a href="#changes">Changes to the App or Terms</a></li>
-      <li><a href="#privacy">Privacy</a></li>
-      <li><a href="#general">General Provisions</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#general">General</a></li>
       <li><a href="#contact">Contact</a></li>
     </ol>
   </nav>
 
   <section id="acceptance">
     <h2><span class="num">1.</span>Acceptance of Terms</h2>
-    <p>These Terms constitute a legally binding agreement between you ("User," "you") and Infinity Fintech Solutions ("Company," "we," "us," "our") governing your access to and use of the CountMeIn application, including all related features, updates, and content (collectively, the "Service").</p>
-    <p>Your continued use of the Service after any update to these Terms constitutes your acceptance of the revised Terms. If you are using the Service on behalf of another person or entity, you represent that you have the authority to bind that person or entity to these Terms.</p>
+    <p>These Terms are a binding agreement between you and Infinity Fintech Solutions ("Company," "we," "us," "our") governing your use of CountMeIn, including updates, websites, and related features. If you use the Service on behalf of an organization, you represent that you have authority to bind that organization.</p>
   </section>
 
   <section id="eligibility">
     <h2><span class="num">2.</span>Eligibility</h2>
-    <p>You must be at least <strong>13 years of age</strong> to use the Service. If you are between 13 and the age of legal majority in your jurisdiction, you may use the Service only with the involvement and consent of a parent or legal guardian, who agrees to be bound by these Terms on your behalf.</p>
-    <p>By using the Service, you represent and warrant that you meet these eligibility requirements and that all registration information you submit is accurate and truthful.</p>
+    <p>You must be at least <strong>13 years of age</strong> to use the Service. If you are under the age of legal majority in your jurisdiction, you may use the Service only with parental or guardian consent and supervision. You must have capacity to enter a binding contract where required by law. Features involving real-world money settlements assume you can lawfully use the payment methods you choose outside the App.</p>
   </section>
 
-  <section id="account">
+  <section id="accounts">
     <h2><span class="num">3.</span>Accounts &amp; Security</h2>
-    <p>The Service identifies you through an anonymous, device-bound authentication session (via Firebase Anonymous Authentication) rather than a traditional email/password or third-party account login. Within a Group, you may set a display name and a group photo, which are visible to other members of that Group. You are solely responsible for:</p>
+    <p>You may create an account using email/password and/or Google Sign-In (or other methods we enable). You are responsible for:</p>
     <ul>
-      <li>Maintaining physical security and confidentiality of the device on which the App is installed, since your anonymous identity, Group memberships, and locally cached data are tied to that device installation;</li>
-      <li>All activity that occurs through your device's session, whether or not authorized by you;</li>
-      <li>Notifying us immediately of any unauthorized access or suspected security breach.</li>
+      <li>Providing accurate registration information and keeping it updated;</li>
+      <li>Maintaining the confidentiality of your credentials and device;</li>
+      <li>All activity under your account;</li>
+      <li>Notifying us promptly of unauthorized access.</li>
     </ul>
-    <p>Because authentication is anonymous and device-bound, uninstalling the App, clearing its application data, or resetting your device may permanently disconnect you from your existing Group memberships and data, and we may be unable to restore such access. We are not liable for any loss of access, data, or Group membership arising from your failure to safeguard your device or from such device-level changes.</p>
+    <p>We may refuse, reclaim, or require verification of accounts to protect the Service and other users.</p>
   </section>
 
-  <section id="description">
-    <h2><span class="num">4.</span>Description of Service</h2>
-    <p>CountMeIn is a personal and group expense-tracking application that allows users to record transactions, categorize spending, set budgets, create shared expense groups, split costs with other users, and communicate via in-app group chat. Data may be stored locally on your device and/or synchronized to cloud infrastructure (including Google Firebase/Firestore) to enable multi-device and multi-user functionality.</p>
-    <p>The Service is provided for personal financial organization purposes only and does not constitute, and must not be relied upon as, financial, tax, accounting, investment, or legal advice.</p>
+  <section id="license">
+    <h2><span class="num">4.</span>License to Use the Service</h2>
+    <p>Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to install and use the App for personal, non-commercial purposes (unless we expressly agree otherwise in writing). You may not copy, modify, distribute, reverse engineer, or create derivative works of the App except as allowed by mandatory law.</p>
+  </section>
+
+  <section id="service">
+    <h2><span class="num">5.</span>Description of the Service</h2>
+    <p>CountMeIn may include, without limitation: personal expense tracking; budgets and analytics; groups and invitations; expense splitting (including equal, custom, income-weighted, and itemized methods); live item claim; settlements and Settle-up Day nudges; Spot Me IOUs; group chat; receipt scanning; recurring expenses; referrals; widgets; notifications; optional location prompts; and paid Pro features. Features may vary by platform, region, or plan and may change over time.</p>
+  </section>
+
+  <section id="user-content">
+    <h2><span class="num">6.</span>User Content</h2>
+    <p>"User Content" means data you submit, including expenses, notes, chat, photos, receipts, profile information, and payment handles. You retain ownership of your User Content. You grant us a worldwide, non-exclusive, royalty-free license to host, store, process, transmit, and display User Content solely to operate and improve the Service and as otherwise described in the Privacy Policy.</p>
+    <p>You represent that you have all rights needed to submit User Content and that it does not violate law or third-party rights.</p>
   </section>
 
   <section id="groups">
-    <h2><span class="num">5.</span>Groups, Chat &amp; User Content</h2>
-    <p>The Service allows you to create or join expense groups, share expense data with other group members, and exchange messages via group chat ("User Content"). With respect to Groups and User Content, you acknowledge and agree that:</p>
+    <h2><span class="num">7.</span>Groups, Chat &amp; Social Features</h2>
     <ul>
-      <li>Any data, expense entries, or messages you submit to a group are visible to all current (and, where applicable, past) members of that group;</li>
-      <li>You are solely responsible for the accuracy, legality, and appropriateness of all User Content you submit;</li>
-      <li>We do not pre-screen, monitor, verify, or endorse User Content, and we assume no responsibility or liability for any User Content posted by you or any third party;</li>
-      <li>We reserve the right, but have no obligation, to remove, disable, or restrict access to any User Content or group, or to suspend or terminate a user's access, at our sole discretion, with or without notice, including where content is reported as abusive, unlawful, or in violation of these Terms;</li>
-      <li>Group administrators/creators may have the ability to remove members, modify group data, or delete the group entirely, which may result in loss of data for all members; we are not responsible for such actions taken by other users;</li>
-      <li>You must not use group chat to transmit threatening, harassing, defamatory, obscene, fraudulent, or otherwise unlawful content.</li>
+      <li>Group features are shared. Other members can see relevant profile, expense, settlement, and chat information.</li>
+      <li>Hosts/admins may manage membership and certain settings.</li>
+      <li>We may remove content or restrict access for abuse, illegality, or Terms violations.</li>
+      <li>You are solely responsible for your interactions with other users.</li>
     </ul>
-    <p>You grant us a worldwide, non-exclusive, royalty-free, sublicensable license to host, store, reproduce, transmit, and display User Content solely to the extent necessary to operate, provide, and improve the Service.</p>
-  </section>
-
-  <section id="acceptable-use">
-    <h2><span class="num">6.</span>Acceptable Use</h2>
-    <p>You agree not to, and not to permit any third party to:</p>
-    <ul>
-      <li>Use the Service for any unlawful purpose or in violation of any applicable local, state, national, or international law;</li>
-      <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where such restriction is prohibited by applicable law;</li>
-      <li>Interfere with, disrupt, overburden, or gain unauthorized access to the Service, its servers, or associated databases and infrastructure;</li>
-      <li>Use any automated system, bot, scraper, or data mining tool to access the Service;</li>
-      <li>Impersonate any person or entity, or misrepresent your affiliation with any person or entity;</li>
-      <li>Upload viruses, malware, or any other malicious code;</li>
-      <li>Use the Service to harass, abuse, defraud, or harm another user, including through group chat or shared expense data;</li>
-      <li>Circumvent, disable, or otherwise interfere with security-related features of the Service, including those that prevent or restrict use of paid features;</li>
-      <li>Use the Service in any way that could disable, overburden, damage, or impair it.</li>
-    </ul>
-    <p>Violation of this section may result in immediate suspension or termination of your access to the Service without notice or refund.</p>
   </section>
 
   <section id="financial">
-    <h2><span class="num">7.</span>Financial Data Disclaimer</h2>
+    <h2><span class="num">8.</span>No Financial Services; Settlements Outside the App</h2>
     <div class="allcaps-block">
-      CountMeIn is a personal record-keeping tool only. It does not connect to bank accounts, does not move, hold, or transmit real funds, and does not provide financial, investment, tax, or legal advice. All calculations (including balances, splits, and settlements between group members) are provided for informational and organizational purposes only. We do not guarantee the accuracy, completeness, or timeliness of any calculation, and we are not responsible for any financial decision, payment, dispute, or loss arising from your reliance on data displayed in the App.
+      CountMeIn is a personal organization and record-keeping tool only. It is not a bank, wallet, payment processor, escrow, remittance, or money-transmission service. It does not provide financial, investment, tax, accounting, or legal advice.
     </div>
-    <p>Any actual transfer of money between users to settle balances shown in the App occurs entirely outside the Service, between the users directly, and is not facilitated, guaranteed, escrowed, or verified by us in any way. We are not a party to, and bear no responsibility for, any such external payment or dispute arising from it.</p>
+    <p>Balances, splits, and settlements shown in the App are informational. Any real-world payment between users happens outside CountMeIn through methods you choose (for example UPI, bank transfer, Venmo, PayPal, cash). We do not guarantee, verify, escrow, or insure those payments. Payment handles stored in the App are provided by users for convenience and may be incorrect or misused by others; use care when sharing them.</p>
   </section>
 
-  <section id="subscriptions">
-    <h2><span class="num">8.</span>Subscriptions, Purchases &amp; Advertising</h2>
-    <h3>8.1 In-App Purchases</h3>
-    <p>The Service may offer optional paid features ("CountMeIn Pro") via in-app purchase through the Google Play billing system. All purchases are subject to the payment terms, refund policies, and billing terms of the applicable app store (e.g., Google Play), which are outside our control. We do not directly process or store your payment card information.</p>
-    <p>Except where required by applicable consumer protection law, all purchases are final and non-refundable. Refund requests must be directed to the app store through which the purchase was made.</p>
-    <h3>8.2 Advertising</h3>
-    <p>The free version of the Service may display third-party advertisements served via Google AdMob or other ad networks. These networks may collect and use data in accordance with their own privacy policies. We are not responsible for the content, accuracy, or practices of third-party advertisers.</p>
+  <section id="ocr">
+    <h2><span class="num">9.</span>Receipts, OCR &amp; Calculations</h2>
+    <p>OCR and automated parsing may be incomplete or wrong. You must verify amounts, taxes, tips, and assignments before saving. We are not liable for losses arising from reliance on automated extractions totals, splits, analytics, currency conversion displays, or notifications.</p>
+  </section>
+
+  <section id="location">
+    <h2><span class="num">10.</span>Location Features</h2>
+    <p>Optional location prompts are provided for convenience only. They may be inaccurate or unavailable. You can disable location permissions at any time. Core Service features do not require location access.</p>
+  </section>
+
+  <section id="pro">
+    <h2><span class="num">11.</span>Subscriptions, Advertisements, Trials &amp; Referrals</h2>
+    <p><strong>CountMeIn Pro</strong> and any time-limited offers (including future trip-style passes, if offered) are billed through the applicable app store. Store refund and billing rules apply. We do not store your full payment card details.</p>
+    <p>The free tier may show advertisements, including rewarded ads for certain actions. Pro removes ads where stated in-product.</p>
+    <p>Referral or promotional Pro rewards are discretionary benefits that may be modified, limited, or revoked for abuse, fraud, or policy changes. Rewards have no cash value unless required by law.</p>
+  </section>
+
+  <section id="acceptable">
+    <h2><span class="num">12.</span>Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Violate law or others' rights;</li>
+      <li>Harass, abuse, defraud, or impersonate others;</li>
+      <li>Upload malware or attempt to disrupt or probe the Service;</li>
+      <li>Scrape, bulk-export, or misuse APIs/data except as allowed in the App;</li>
+      <li>Use the Service for illegal gambling, money laundering, or prohibited financial activity;</li>
+      <li>Bypass usage limits, security, billing, or referral controls;</li>
+      <li>Post unlawful, infringing, or highly sensitive personal data of others without rights/consent.</li>
+    </ul>
   </section>
 
   <section id="ip">
-    <h2><span class="num">9.</span>Intellectual Property</h2>
-    <p>The Service, including its software, design, graphics, logos, trademarks, and all underlying technology, is owned by Infinity Fintech Solutions or its licensors and is protected by applicable intellectual property and proprietary rights laws. Except for the limited, revocable, non-exclusive, non-transferable license to use the App for its intended personal purpose, no right, title, or interest in the Service is transferred to you.</p>
-    <p>You retain ownership of the User Content you submit, subject to the license granted in Section 5.</p>
+    <h2><span class="num">13.</span>Intellectual Property</h2>
+    <p>The App, branding, UI, code, and documentation are owned by Infinity Fintech Solutions or its licensors. See our <a href="copyright.html">Copyright Notice</a>. Except for the limited license in Section 4, no rights are granted.</p>
   </section>
 
   <section id="third-party">
-    <h2><span class="num">10.</span>Third-Party Services</h2>
-    <p>The Service relies on and integrates with third-party service providers, including but not limited to Google Firebase (authentication, Firestore database, Cloud Messaging, Cloud Functions), Google Play Billing, and Google AdMob. Your use of the Service is also subject to the applicable terms and privacy policies of these providers. We are not responsible for the availability, performance, security, or practices of any third-party service, and any outage, data loss, or breach originating from a third-party provider is outside our control and liability.</p>
+    <h2><span class="num">14.</span>Third-Party Services</h2>
+    <p>The Service relies on third parties (including Google Firebase, Google Sign-In, app stores, AdMob, and device OS features). Their outages, changes, or policies are outside our control. Your use of those services may be subject to their terms and privacy policies.</p>
   </section>
 
-  <section id="termination">
-    <h2><span class="num">11.</span>Suspension &amp; Termination</h2>
-    <p>We reserve the right, at our sole discretion and without prior notice or liability, to suspend, restrict, or terminate your access to all or part of the Service, and to delete associated data, if we believe you have violated these Terms, engaged in fraudulent or unlawful conduct, or for any other reason, including discontinuation of the Service.</p>
-    <p>You may stop using the Service and delete your account at any time. Upon termination, your right to use the Service ceases immediately. Sections of these Terms which by their nature should survive termination (including Sections 7, 12, 13, 14, 15, and 16) shall survive.</p>
+  <section id="suspension">
+    <h2><span class="num">15.</span>Suspension &amp; Termination</h2>
+    <p>We may suspend or terminate access, with or without notice, for Terms violations, risk, legal reasons, or Service discontinuation. You may stop using the Service and delete your account at any time. Provisions that by nature should survive (including IP, disclaimers, liability limits, indemnity, and dispute terms) survive termination.</p>
   </section>
 
-  <section id="disclaimer">
-    <h2><span class="num">12.</span>Disclaimer of Warranties</h2>
+  <section id="disclaimers">
+    <h2><span class="num">16.</span>Disclaimers</h2>
     <div class="allcaps-block">
-      The service is provided "as is" and "as available," without warranties of any kind, whether express, implied, or statutory, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, and any warranties arising from course of dealing or usage of trade. We do not warrant that the service will be uninterrupted, timely, secure, error-free, that data will not be lost or corrupted, or that any defects will be corrected. You use the service entirely at your own risk.
+      The service is provided "as is" and "as available" without warranties of any kind, whether express, implied, or statutory, including merchantability, fitness for a particular purpose, title, and non-infringement. We do not warrant uninterrupted, secure, or error-free operation, or that data will never be lost.
     </div>
   </section>
 
   <section id="liability">
-    <h2><span class="num">13.</span>Limitation of Liability</h2>
+    <h2><span class="num">17.</span>Limitation of Liability</h2>
     <div class="allcaps-block">
-      To the maximum extent permitted by applicable law, in no event shall Infinity Fintech Solutions, its officers, directors, employees, or agents be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, including but not limited to loss of profits, data, goodwill, or other intangible losses, arising out of or related to your access to or use of, or inability to access or use, the service, any conduct or content of any user or third party, or any unauthorized access, use, or alteration of your data, even if we have been advised of the possibility of such damages.
+      To the maximum extent permitted by law, Infinity Fintech Solutions and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or any loss of profits, data, goodwill, or other intangible losses, arising from your use of or inability to use the service, user conduct, third-party services, or unauthorized access to data, even if advised of the possibility of such damages.
     </div>
-    <p>To the maximum extent permitted by applicable law, our total aggregate liability to you for all claims arising out of or relating to the Service shall not exceed the greater of (a) the amount you paid us, if any, in the twelve (12) months preceding the claim, or (b) one thousand Indian Rupees (₹1,000).</p>
-    <p>Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above limitations may not apply to you.</p>
+    <p>To the maximum extent permitted by law, our total aggregate liability for all claims relating to the Service shall not exceed the greater of (a) the amounts you paid us for the Service in the twelve (12) months before the claim, or (b) one thousand Indian Rupees (₹1,000).</p>
+    <p>Some jurisdictions do not allow certain limitations; in those cases, our liability is limited to the maximum extent permitted.</p>
   </section>
 
   <section id="indemnity">
-    <h2><span class="num">14.</span>Indemnification</h2>
-    <p>You agree to defend, indemnify, and hold harmless Infinity Fintech Solutions and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with: (a) your access to or use of the Service; (b) your User Content; (c) your violation of these Terms; or (d) your violation of any rights of another party, including other users of Groups or chat features.</p>
+    <h2><span class="num">18.</span>Indemnification</h2>
+    <p>You agree to defend, indemnify, and hold harmless Infinity Fintech Solutions and its officers, directors, employees, and agents from claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from: (a) your use of the Service; (b) your User Content; (c) your violation of these Terms; or (d) your violation of others' rights, including other users.</p>
   </section>
 
   <section id="arbitration">
-    <h2><span class="num">15.</span>Dispute Resolution &amp; Binding Arbitration</h2>
-    <p><strong>Please read this section carefully. It affects your legal rights and requires disputes to be resolved through individual binding arbitration rather than in court.</strong></p>
-    <p>Any dispute, controversy, or claim arising out of or relating to these Terms or the Service, including its existence, validity, interpretation, breach, or termination, shall first be attempted to be resolved through good-faith informal negotiation by contacting us at the email address in Section 20. If the dispute is not resolved within thirty (30) days of such notice, it shall be referred to and finally resolved by arbitration administered under the Arbitration and Conciliation Act, 1996 (India), as amended from time to time.</p>
+    <h2><span class="num">19.</span>Dispute Resolution &amp; Binding Arbitration</h2>
+    <p><strong>Please read carefully. This affects your rights.</strong></p>
+    <p>Disputes arising out of these Terms or the Service shall first be addressed informally by contacting us. If unresolved within thirty (30) days, disputes shall be finally resolved by arbitration under the Arbitration and Conciliation Act, 1996 (India), as amended.</p>
     <ul>
-      <li>The arbitration shall be conducted by a sole arbitrator appointed by mutual agreement of the parties;</li>
-      <li>The seat and venue of arbitration shall be Ahmedabad, Gujarat, India;</li>
-      <li>The language of arbitration shall be English;</li>
-      <li>The arbitral award shall be final and binding on both parties;</li>
-      <li>Each party shall bear its own costs of arbitration unless otherwise determined by the arbitrator.</li>
+      <li>Sole arbitrator mutually appointed;</li>
+      <li>Seat/venue: Ahmedabad, Gujarat, India;</li>
+      <li>Language: English;</li>
+      <li>Award final and binding;</li>
+      <li>Each party bears its own costs unless the arbitrator decides otherwise.</li>
     </ul>
-    <p><strong class="caps">Class action waiver:</strong> To the fullest extent permitted by applicable law, you and we agree that any proceedings to resolve disputes will be conducted only on an individual basis and not in a class, consolidated, or representative action. You waive any right to participate in a class action lawsuit or class-wide arbitration against us.</p>
-    <p>Nothing in this section prevents either party from seeking injunctive or other equitable relief in a court of competent jurisdiction to prevent actual or threatened infringement, misappropriation, or violation of intellectual property rights.</p>
+    <p><strong class="caps">Class action waiver:</strong> To the fullest extent permitted by law, disputes are individual only—not class, consolidated, or representative actions.</p>
+    <p>Either party may seek injunctive relief in court to protect intellectual property or prevent unauthorized use of the Service.</p>
   </section>
 
   <section id="governing-law">
-    <h2><span class="num">16.</span>Governing Law &amp; Jurisdiction</h2>
-    <p>These Terms and any dispute arising out of or in connection with them shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles. Subject to Section 15 (Arbitration), the courts of Ahmedabad, Gujarat, India shall have exclusive jurisdiction over any matter not subject to arbitration or any action to enforce an arbitral award.</p>
+    <h2><span class="num">20.</span>Governing Law &amp; Jurisdiction</h2>
+    <p>These Terms are governed by the laws of India, without regard to conflict-of-law rules. Subject to arbitration above, courts in Ahmedabad, Gujarat, India have exclusive jurisdiction for matters not subject to arbitration or to enforce an award.</p>
   </section>
 
   <section id="changes">
-    <h2><span class="num">17.</span>Changes to the App or Terms</h2>
-    <p>We reserve the right, at our sole discretion, to modify, suspend, or discontinue the Service (or any part of it), with or without notice, at any time. We are not liable to you or any third party for any modification, suspension, or discontinuation of the Service.</p>
-    <p>We may revise these Terms from time to time. The updated version will be indicated by a revised "Last updated" date. Material changes may be notified through the App or other reasonable means. Your continued use of the Service after changes become effective constitutes acceptance of the revised Terms.</p>
-  </section>
-
-  <section id="privacy">
-    <h2><span class="num">18.</span>Privacy</h2>
-    <p>Our collection and use of personal information in connection with the Service is described in our <a href="privacy.html">Privacy Policy</a>. By using the Service, you consent to such collection and use in accordance with the Privacy Policy.</p>
+    <h2><span class="num">21.</span>Changes to the Service or Terms</h2>
+    <p>We may modify, suspend, or discontinue the Service (in whole or part) at any time. We may update these Terms; the "Last updated" date will change. Material changes may be notified in-app or by other reasonable means. Continued use after changes means acceptance.</p>
   </section>
 
   <section id="general">
-    <h2><span class="num">19.</span>General Provisions</h2>
-    <h3>19.1 Entire Agreement</h3>
-    <p>These Terms, together with the Privacy Policy and any other legal notices published by us on the Service, constitute the entire agreement between you and us concerning the Service.</p>
-    <h3>19.2 Severability</h3>
-    <p>If any provision of these Terms is held to be invalid or unenforceable, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
-    <h3>19.3 No Waiver</h3>
-    <p>Our failure to enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision.</p>
-    <h3>19.4 Assignment</h3>
-    <p>You may not assign or transfer these Terms or any rights granted hereunder without our prior written consent. We may assign these Terms without restriction, including in connection with a merger, acquisition, or sale of assets.</p>
-    <h3>19.5 Force Majeure</h3>
-    <p>We shall not be liable for any failure or delay in performance resulting from causes beyond our reasonable control, including acts of God, natural disaster, war, terrorism, riots, embargoes, acts of civil or military authority, fire, floods, accidents, network or infrastructure failures, strikes, or shortages of transportation, facilities, fuel, energy, labor, or materials.</p>
-    <h3>19.6 Export Control &amp; Sanctions</h3>
-    <p>You represent that you are not located in, under the control of, or a national or resident of any country subject to a comprehensive trade embargo, and are not on any government restricted-party list.</p>
-    <h3>19.7 Relationship of Parties</h3>
-    <p>Nothing in these Terms creates any partnership, joint venture, employment, or agency relationship between you and us.</p>
+    <h2><span class="num">22.</span>General Provisions</h2>
+    <p><strong>Entire agreement.</strong> These Terms, the Privacy Policy, Copyright Notice, and in-App legal notices are the entire agreement regarding the Service.</p>
+    <p><strong>Severability.</strong> If a provision is unenforceable, it will be limited to the minimum extent necessary; the rest remains in effect.</p>
+    <p><strong>No waiver.</strong> Failure to enforce a provision is not a waiver.</p>
+    <p><strong>Assignment.</strong> You may not assign these Terms without our consent. We may assign them in connection with a merger, acquisition, or sale of assets.</p>
+    <p><strong>Force majeure.</strong> We are not liable for delays or failures beyond our reasonable control.</p>
+    <p><strong>Export / sanctions.</strong> You represent you are not prohibited from receiving the Service under applicable export or sanctions laws.</p>
+    <p><strong>No agency.</strong> Nothing here creates a partnership, joint venture, employment, or agency relationship.</p>
   </section>
 
   <section id="contact">
-    <h2><span class="num">20.</span>Contact Us</h2>
-    <p>For questions, notices, or disputes relating to these Terms, contact:</p>
+    <h2><span class="num">23.</span>Contact Us</h2>
     <table>
       <tr><th>Entity</th><td>Infinity Fintech Solutions</td></tr>
       <tr><th>App</th><td>CountMeIn</td></tr>
@@ -392,9 +336,9 @@
   </section>
 
   <a class="back-top" href="#top">↑ Back to top</a>
-
   <footer>
-    <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved. This document does not constitute legal advice; consult a qualified attorney to ensure these Terms fully meet your specific legal and regulatory obligations before relying on them in production.</p>
+    <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved. CountMeIn and related marks are trademarks of Infinity Fintech Solutions. These pages are provided for transparency and compliance; they do not constitute legal advice. Please consult a qualified attorney for advice specific to your situation.</p>
+    <p class="legal-nav"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="copyright.html">Copyright</a></p>
   </footer>
 
 </div>
