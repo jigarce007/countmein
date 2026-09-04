@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>CountMeIn — The easiest way to split the bill</title>
 <meta name="description" content="CountMeIn helps friends, travelers, and roommates track shared expenses, scan receipts, claim items live, and settle up—worldwide.">
 <meta property="og:title" content="CountMeIn — Split bills without the awkward math">
@@ -21,6 +21,8 @@
         <div class="brand-sub">Split · Track · Settle</div>
       </div>
     </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu"><span></span></label>
     <nav class="top-nav" aria-label="Primary">
       <a href="#moments">Moments</a>
       <a href="#features">Features</a>
@@ -122,28 +124,31 @@
   </section>
 
   <section class="section soft" id="restaurant">
-    <div class="container moment">
-      <div class="moment-visual">
-        <img src="assets/hero-friends-dinner.jpg" alt="Friends splitting a restaurant bill" loading="lazy">
-        <div class="float-card">
-          <div class="float-label">Tonight’s dinner</div>
-          <div class="float-row"><span>Alex paid</span><strong>$86.40</strong></div>
-          <div class="float-row muted"><span>Split 4 ways</span><strong>$21.60 each</strong></div>
-          <div class="float-bar"><span></span></div>
-          <div class="float-cta">All claimed · Ready to settle</div>
-        </div>
-      </div>
-      <div class="moment-copy">
+    <div class="container">
+      <div class="section-head center">
         <span class="eyebrow">Restaurant nights</span>
         <h2>Scan. Claim. Done.</h2>
+        <p>Snap the receipt, let everyone tap what they ordered, and settle before dessert.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene" id="dinner">
+    <div class="scene-media" aria-hidden="true">
+      <img src="assets/hero-friends-dinner.jpg" alt="" width="1600" height="1066" loading="lazy">
+    </div>
+    <div class="container scene-inner">
+      <div class="scene-content">
+        <div class="hero-kicker">At the table</div>
+        <h2>No more calculator debates</h2>
         <p>
-          Snap the receipt, let everyone tap what they ordered, and confirm the split before dessert.
-          No more calculator debates at the table.
+          Live item claim turns a messy shared bill into a fair split—
+          while the food is still warm.
         </p>
-        <div class="tag-row">
-          <span class="tag">Receipt OCR</span>
-          <span class="tag">Live item claim</span>
-          <span class="tag">Fair leftovers</span>
+        <div class="hero-meta">
+          <span>Receipt OCR</span>
+          <span>Live item claim</span>
+          <span>Fair leftovers</span>
         </div>
       </div>
     </div>
@@ -293,5 +298,15 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    if (!toggle) return;
+    document.querySelectorAll('.top-nav a').forEach(function (link) {
+      link.addEventListener('click', function () { toggle.checked = false; });
+    });
+  })();
+</script>
 </body>
 </html>
