@@ -269,6 +269,53 @@ h1, h2, h3, .brand-name {
   font-size: 1.05rem;
 }
 
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+@media (max-width: 760px) {
+  .audience-grid { grid-template-columns: 1fr; }
+}
+.audience-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(7, 20, 15, 0.06);
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.audience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 50px rgba(7, 20, 15, 0.1);
+}
+.audience-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--cmi-2);
+}
+.audience-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s var(--ease);
+}
+.audience-card:hover .audience-media img {
+  transform: scale(1.04);
+}
+.audience-body {
+  padding: 22px 22px 24px;
+}
+.audience-body h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+.audience-body p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
 .bento {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
