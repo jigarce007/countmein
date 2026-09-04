@@ -23,6 +23,16 @@
     color: var(--text);
     line-height: 1.6;
   }
+
+  .doc-top {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    margin: -48px -24px 28px;
+    padding: 18px 24px 10px;
+  }
+  @media (max-width: 640px) {
+    .doc-top { margin-left: -24px; margin-right: -24px; }
+  }
   .wrap { max-width: 720px; margin: 0 auto; padding: 28px 24px 80px; }
   h1 { font-size: 1.9rem; margin: 24px 0 8px; letter-spacing: -0.02em; }
   .lede { color: var(--muted); margin: 0 0 24px; }
@@ -67,20 +77,36 @@
 </head>
 <body>
 <div class="wrap">
-  <a class="brand-lockup" href="index.html">
-    <img src="logo.png" width="48" height="48" alt="CountMeIn logo">
-    <div>
-      <div class="name">CountMeIn</div>
-      <div class="sub">Feedback &amp; Contact</div>
+<header class="doc-top">
+  <div class="doc-top-inner">
+    <div class="site-header">
+      <a class="brand-lockup" href="index.html">
+        <img src="logo.png" width="48" height="48" alt="CountMeIn logo">
+        <div>
+          <div class="name">CountMeIn</div>
+          <div class="sub">Infinity Fintech Solutions</div>
+        </div>
+      </a>
+      <nav class="legal-nav" aria-label="Site">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-to">How to use</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="copyright.html">Copyright</a>
+      </nav>
     </div>
-  </a>
-  <div class="brand-accent-bar" aria-hidden="true"></div>
-  <nav class="legal-nav" aria-label="Legal documents">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms &amp; Conditions</a>
-    <a href="copyright.html">Copyright</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <div class="brand-accent-bar" aria-hidden="true"></div>
+  </div>
+</header>
+
+    <nav class="legal-nav" aria-label="Legal documents">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="copyright.html">Copyright</a>
+      <a href="contact.html">Contact / Feedback</a>
+    </nav>
 
   <h1>Contact us</h1>
   <p class="lede">Questions, bug reports, feature ideas, or privacy requests — we’d love to hear from you.</p>

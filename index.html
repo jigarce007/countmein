@@ -3,135 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CountMeIn — Legal</title>
-<meta name="description" content="Legal information for CountMeIn by Infinity Fintech Solutions: Privacy Policy, Terms, Copyright, and Contact.">
+<title>CountMeIn — Split bills & track spending</title>
+<meta name="description" content="CountMeIn helps you track personal spending and split group expenses fairly—scan receipts, claim items live, settle up, and stay on budget.">
 <link rel="icon" href="logo.png" type="image/png">
 <link rel="stylesheet" href="brand.css">
-<style>
-  :root {
-    --primary: #16A34A;
-    --primary-dark: #15803D;
-    --text: #17201A;
-    --muted: #66736A;
-    --background: #F7FAF8;
-    --card: #FFFFFF;
-    --border: #E3EAE5;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--background);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  header.top {
-    background: var(--card);
-    border-bottom: 1px solid var(--border);
-  }
-  .header-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 22px 24px 18px;
-  }
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 36px 24px 72px;
-  }
-  h1 {
-    font-size: 2rem;
-    margin: 0 0 10px;
-    letter-spacing: -0.7px;
-  }
-  .intro {
-    color: var(--muted);
-    margin: 0 0 28px;
-    max-width: 62ch;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
-  }
-  a.card {
-    display: block;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 22px 20px;
-    text-decoration: none;
-    color: inherit;
-    transition: border-color .15s ease, transform .15s ease;
-  }
-  a.card:hover {
-    border-color: var(--cmi-hero-3);
-    transform: translateY(-1px);
-  }
-  a.card h2 {
-    margin: 0 0 8px;
-    font-size: 1.15rem;
-    color: var(--primary-dark);
-  }
-  a.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-  footer.page-foot {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 24px 40px;
-    color: var(--muted);
-    font-size: 0.88rem;
-  }
-  footer.page-foot a { color: var(--accent); }
-</style>
 </head>
-<body>
-<header class="top">
-  <div class="header-content">
-    <a class="brand-lockup" href="index.html">
-      <img src="logo.png" width="48" height="48" alt="CountMeIn logo">
-      <div>
-        <div class="name">CountMeIn</div>
-        <div class="sub">by Infinity Fintech Solutions</div>
-      </div>
-    </a>
+<body class="landing">
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="site-header">
+      <a class="brand-lockup" href="index.html">
+        <img src="logo.png" width="48" height="48" alt="CountMeIn logo">
+        <div>
+          <div class="name">CountMeIn</div>
+          <div class="sub">by Infinity Fintech Solutions</div>
+        </div>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how-to">How to use</a>
+        <a href="#pro">Pro</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
     <div class="brand-accent-bar" aria-hidden="true"></div>
   </div>
 </header>
-<main>
-  <h1>Legal &amp; Support</h1>
-  <p class="intro">
-    Official policies and contact for CountMeIn — expense tracking and bill splitting for people worldwide.
-    Last updated September 4, 2026.
-  </p>
 
-  <div class="grid">
-    <a class="card" href="privacy.html">
-      <h2>Privacy Policy</h2>
-      <p>How we collect, use, share, and protect your information.</p>
-    </a>
-    <a class="card" href="terms.html">
-      <h2>Terms &amp; Conditions</h2>
-      <p>Rules for using CountMeIn, subscriptions, and limitations of liability.</p>
-    </a>
-    <a class="card" href="copyright.html">
-      <h2>Copyright</h2>
-      <p>Intellectual property ownership, trademarks, and infringement notices.</p>
-    </a>
-    <a class="card" href="contact.html">
-      <h2>Feedback / Contact</h2>
-      <p>Send feedback, questions, or support requests.</p>
-    </a>
-  </div>
+<main class="page">
+  <section class="hero">
+    <div>
+      <h1>Split bills fairly.<br>Track your budget clearly.</h1>
+      <p class="lead">
+        CountMeIn is for roommates, trips, couples, and friends worldwide—
+        personal expense tracking and group splitting in one modern app.
+      </p>
+      <div class="hero-actions">
+        <a class="brand-btn" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly">Get it on Google Play</a>
+        <a class="brand-btn secondary" href="contact.html">Send feedback</a>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Groups &amp; settle up</span>
+        <span class="pill">Receipt scan</span>
+        <span class="pill">Live item claim</span>
+        <span class="pill">Budgets &amp; analytics</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="logo.png" width="220" height="220" alt="CountMeIn app icon">
+    </div>
+  </section>
 
-  <div class="actions">
-    <a class="brand-btn" href="contact.html">Contact us</a>
-    <a class="brand-btn" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly" style="opacity:.95">Get CountMeIn on Google Play</a>
-  </div>
+  <section class="section" id="features">
+    <h2>Everything you need to stay even</h2>
+    <p class="section-lead">Built from real roommate, trip, and everyday shared-cost workflows—not a spreadsheet in disguise.</p>
+    <div class="feature-grid">
+      <article class="feature">
+        <div class="icon">₹$</div>
+        <h3>Personal expenses</h3>
+        <p>Log spending by category, search and sort, set a monthly limit, and see progress at a glance on Home.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">📊</div>
+        <h3>Analytics &amp; calendar</h3>
+        <p>Category breakdowns, monthly trends, history, and a calendar view so you know where money actually went.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">👥</div>
+        <h3>Groups that sync</h3>
+        <p>Create or join with a code/link, add members, track who paid what, and keep balances clear in real time.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">🧾</div>
+        <h3>Receipt scan &amp; item split</h3>
+        <p>Scan a bill, review line items, assign who had what, and split fairly—including tax/tip leftovers.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">✋</div>
+        <h3>Live item claim</h3>
+        <p>At the table, everyone taps the items they ordered. Claims update live, then the host confirms the split.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">💬</div>
+        <h3>Group chat</h3>
+        <p>Talk about expenses in context—less chasing people across WhatsApp threads.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">✅</div>
+        <h3>Settle up</h3>
+        <p>See simplified “who pays whom,” nudge the group on Settle-up Day, and share payment handles (UPI, Venmo, PayNow, and more).</p>
+      </article>
+      <article class="feature">
+        <div class="icon">🤝</div>
+        <h3>Spot Me</h3>
+        <p>One-off IOUs outside a group when someone covers you for coffee, tickets, or a favor.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">🔁</div>
+        <h3>Recurring expenses</h3>
+        <p>Track subscriptions and repeating bills so nothing quietly drains your month.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">🔔</div>
+        <h3>Smart reminders</h3>
+        <p>Spending alerts, monthly summaries, chat/expense notifications, and optional location prompts when you’re out.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">📱</div>
+        <h3>Home widget</h3>
+        <p>Check monthly spending and jump to add an expense without opening the full app.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">🌍</div>
+        <h3>Worldwide ready</h3>
+        <p>Multi-currency, many languages, dark/light theme, and local settle methods for international groups.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="how-to">
+    <h2>How to use CountMeIn</h2>
+    <p class="section-lead">A simple path from install to “we’re all settled.”</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h3>Create your account</h3>
+          <p>Sign up with email or Google. Set your display name, currency, and (optionally) a monthly spending limit.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h3>Track personal spending</h3>
+          <p>Tap + to add an expense, pick a category, and watch your Home summary and Analytics update. Use Search when you need an old entry fast.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h3>Start or join a group</h3>
+          <p>Create a group for a trip or flat, share the join code/link, or join one a friend sent you. Add people who aren’t on the app yet as placeholders if needed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <div>
+          <h3>Add shared expenses</h3>
+          <p>Log who paid, choose equal/custom/income-weighted splits, or scan a receipt and assign items. For dinners, start a live claim so everyone taps their dishes.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">5</div>
+        <div>
+          <h3>Settle up</h3>
+          <p>Open Settle Up to see the simplest payments. Add your payment handles in Profile so friends can pay you the way you actually use. Mark settled when done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <div>
+        <h2>Groups, chat &amp; settle in one place</h2>
+        <p class="section-lead">
+          Shared costs get messy in chat apps. CountMeIn keeps the ledger, conversation, and settle flow together—
+          so “who owes what?” has a clear answer.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Invite by code</span>
+          <span class="pill">Group photos</span>
+          <span class="pill">Debt simplify</span>
+          <span class="pill">Settle-up Day</span>
+        </div>
+      </div>
+      <img src="assets/feature-groups.png" alt="CountMeIn groups and chat screens" width="900" height="auto" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <img src="assets/feature-profile.png" alt="CountMeIn profile and settings" width="900" height="auto" loading="lazy">
+      <div>
+        <h2>Your profile, currency &amp; preferences</h2>
+        <p class="section-lead">
+          Manage account details, theme, language, exports, recurring bills, and payment handles—
+          so settle-up is less awkward and more direct.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Dark / light</span>
+          <span class="pill">Export CSV/PDF</span>
+          <span class="pill">Payment methods</span>
+          <span class="pill">Referrals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pro">
+    <h2>Free vs CountMeIn Pro</h2>
+    <p class="section-lead">Core splitting stays usable on free. Pro removes ads and unlocks power features for frequent users.</p>
+    <div class="feature-grid">
+      <article class="feature">
+        <h3>Free</h3>
+        <p>Personal tracking, groups, settle up, basic export (may require a short ad), and limited chat/group caps as shown in-app.</p>
+      </article>
+      <article class="feature">
+        <h3>Pro</h3>
+        <p>Ad-free experience, stronger export/analytics options, higher group/chat limits, and priority access to premium tools like advanced OCR usage where gated.</p>
+      </article>
+      <article class="feature">
+        <h3>Invite friends</h3>
+        <p>Referral rewards can unlock free Pro time when friends join—check Invite Friends in the app for current terms.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>Does CountMeIn move money between people?</summary>
+        <p>No. It tracks balances and can show payment handles. Actual transfers happen in your bank/UPI/Venmo/PayPal (or similar) apps.</p>
+      </details>
+      <details>
+        <summary>Is my data private?</summary>
+        <p>Group members see shared group content by design. We don’t sell your personal data. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+      </details>
+      <details>
+        <summary>Can I use it outside India?</summary>
+        <p>Yes—CountMeIn is built for international users with multi-currency and multiple regional settle methods.</p>
+      </details>
+      <details>
+        <summary>How do I delete my account?</summary>
+        <p>Use in-app account deletion where available, or contact us via the <a href="contact.html">feedback form</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Ready to stop awkward money math?</h2>
+    <p>Install CountMeIn, create a group for your next trip or flat, and settle with clarity.</p>
+    <div class="hero-actions">
+      <a class="brand-btn secondary" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly">Google Play</a>
+      <a class="brand-btn secondary" href="contact.html">Contact / Feedback</a>
+    </div>
+  </section>
+
+  <section class="section" id="legal">
+    <h2>Legal</h2>
+    <p class="section-lead">Policies for transparency and Play Store compliance.</p>
+    <div class="feature-grid">
+      <a class="feature" href="privacy.html" style="text-decoration:none;color:inherit">
+        <h3>Privacy Policy</h3>
+        <p>How we collect and protect data.</p>
+      </a>
+      <a class="feature" href="terms.html" style="text-decoration:none;color:inherit">
+        <h3>Terms &amp; Conditions</h3>
+        <p>Rules for using the app.</p>
+      </a>
+      <a class="feature" href="copyright.html" style="text-decoration:none;color:inherit">
+        <h3>Copyright</h3>
+        <p>IP ownership and notices.</p>
+      </a>
+      <a class="feature" href="contact.html" style="text-decoration:none;color:inherit">
+        <h3>Contact</h3>
+        <p>Feedback and support form.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy</a> ·
+      <a href="terms.html">Terms</a> ·
+      <a href="copyright.html">Copyright</a> ·
+      <a href="contact.html">Contact</a> ·
+      <a href="mailto:jigarce007@gmail.com">jigarce007@gmail.com</a>
+    </p>
+  </footer>
 </main>
-<footer class="page-foot">
-  <p>&copy; 2026 Infinity Fintech Solutions. All rights reserved.</p>
-  <p>Contact: <a href="mailto:jigarce007@gmail.com">jigarce007@gmail.com</a> · <a href="contact.html">Feedback form</a></p>
-</footer>
 </body>
 </html>

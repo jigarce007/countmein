@@ -1,4 +1,4 @@
-/* CountMeIn brand accents — hero gradient colors from the app (not a fake spending card) */
+/* CountMeIn brand + landing styles */
 :root {
   --cmi-hero-1: #0B1B15;
   --cmi-hero-2: #123626;
@@ -8,6 +8,20 @@
   --cmi-ease: cubic-bezier(0.4, 0, 0.2, 1);
   --accent: #1e5f4f;
   --muted: #5a5a5a;
+  --text: #17201A;
+  --bg: #F7FAF8;
+  --card: #FFFFFF;
+  --border: #E3EAE5;
+}
+
+* { box-sizing: border-box; }
+
+body.landing {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
 }
 
 .site-header {
@@ -16,7 +30,6 @@
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 8px;
 }
 
 .brand-lockup {
@@ -50,7 +63,6 @@
   color: var(--muted);
 }
 
-/* Thin animated brand bar — same colors as Monthly Spending card gradient */
 .brand-accent-bar {
   height: 4px;
   width: 100%;
@@ -72,6 +84,12 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 0.95rem;
+}
+
+.brand-btn.secondary {
+  background: #fff;
+  color: var(--accent);
+  border: 1px solid var(--border);
 }
 
 .brand-btn:hover { filter: brightness(1.05); }
@@ -99,3 +117,249 @@
 @media (prefers-reduced-motion: reduce) {
   .brand-accent-bar { animation: none; }
 }
+
+/* Landing layout */
+.topbar {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.topbar-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 16px 24px 12px;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  align-items: center;
+  font-size: 0.92rem;
+}
+
+.top-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.top-nav a:hover { color: var(--accent); }
+
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 28px 24px 80px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+  margin: 12px 0 48px;
+}
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; }
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+}
+
+.hero .lead {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 20px;
+  max-width: 48ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-visual {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: linear-gradient(160deg, var(--cmi-hero-1), var(--cmi-hero-2) 50%, #0a2f24);
+  padding: 18px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual img {
+  width: min(100%, 280px);
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.28);
+}
+
+.section {
+  margin: 56px 0;
+}
+
+.section h2 {
+  font-size: 1.55rem;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.section .section-lead {
+  color: var(--muted);
+  margin: 0 0 22px;
+  max-width: 60ch;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.feature {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+}
+
+.feature .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, rgba(18,54,38,.12), rgba(15,175,131,.18));
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.feature h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.steps {
+  display: grid;
+  gap: 12px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.step .num {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--cmi-hero-1), var(--cmi-hero-3));
+}
+
+.step h3 { margin: 0 0 4px; font-size: 1.02rem; }
+.step p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .split { grid-template-columns: 1fr; }
+}
+
+.split img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pill {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #EFFAF2;
+  color: var(--accent);
+  border: 1px solid #D8EEE2;
+}
+
+.faq details {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq p {
+  color: var(--muted);
+  margin: 10px 0 4px;
+}
+
+.cta-band {
+  margin-top: 48px;
+  padding: 28px 24px;
+  border-radius: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--cmi-hero-1), var(--cmi-hero-2) 40%, var(--cmi-hero-3));
+}
+
+.cta-band h2 { margin: 0 0 8px; color: #fff; }
+.cta-band p { margin: 0 0 16px; color: rgba(255,255,255,.85); }
+
+.cta-band .brand-btn.secondary {
+  border: none;
+}
+
+.footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.footer a { color: var(--accent); }

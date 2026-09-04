@@ -107,6 +107,16 @@
     border-radius: 4px;
     font-size: 0.9em;
   }
+
+  .doc-top {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    margin: -48px -24px 28px;
+    padding: 18px 24px 10px;
+  }
+  @media (max-width: 640px) {
+    .doc-top { margin-left: -24px; margin-right: -24px; }
+  }
   footer {
     margin-top: 56px;
     padding-top: 20px;
@@ -123,12 +133,28 @@
 </head>
 <body>
 <div class="wrap" id="top">
-  <div class="site-header">
-    <a class="brand-lockup" href="index.html">
-      <img src="logo.png" width="48" height="48" alt="CountMeIn logo">
-      <div>
-        <div class="name">CountMeIn</div>
-        <div class="sub">Infinity Fintech Solutions</div>
+<header class="doc-top">
+  <div class="doc-top-inner">
+    <div class="site-header">
+      <a class="brand-lockup" href="index.html">
+        <img src="logo.png" width="48" height="48" alt="CountMeIn logo">
+        <div>
+          <div class="name">CountMeIn</div>
+          <div class="sub">Infinity Fintech Solutions</div>
+        </div>
+      </a>
+      <nav class="legal-nav" aria-label="Legal documents">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="copyright.html">Copyright</a>
+      <a href="contact.html">Contact / Feedback</a>
+    </nav>
+    </div>
+    <div class="brand-accent-bar" aria-hidden="true"></div>
+  </div>
+</header>
+<div class="sub">Infinity Fintech Solutions</div>
       </div>
     </a>
   </div>
@@ -140,6 +166,7 @@
       Effective date: <strong>September 4, 2026</strong> &nbsp;|&nbsp; Last updated: <strong>September 4, 2026</strong>
     </p>
     <nav class="legal-nav" aria-label="Legal documents">
+      <a href="index.html">Home</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms &amp; Conditions</a>
       <a href="copyright.html">Copyright</a>
