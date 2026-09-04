@@ -34,13 +34,10 @@
   <div class="accent-line" aria-hidden="true"></div>
 </header>
 
-<section class="hero">
-  <div class="hero-media" aria-hidden="true">
-    <img src="assets/hero-friends-dinner.jpg" alt="" width="1600" height="1066" fetchpriority="high">
-  </div>
-  <div class="container">
+<section class="hero-split">
+  <div class="container hero-grid">
     <div class="hero-content">
-      <div class="hero-kicker">Made for real nights out</div>
+      <div class="hero-kicker light">Made for real nights out</div>
       <h1>The easiest way to split the bill</h1>
       <p class="lead">
         On a trip, sharing a flat, or out with friends? CountMeIn keeps who paid what crystal clear—
@@ -48,12 +45,36 @@
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly">Download for free</a>
-        <a class="btn btn-on-dark" href="contact.html">Send feedback</a>
+        <a class="btn btn-ghost" href="contact.html">Send feedback</a>
       </div>
-      <div class="hero-meta">
+      <div class="hero-meta dark">
         <span>Scan the receipt</span>
         <span>Claim items live</span>
         <span>Settle in one tap</span>
+      </div>
+    </div>
+
+    <div class="visual-stage hero-visual" aria-hidden="true">
+      <div class="visual-photo">
+        <img src="assets/hero-friends-dinner.jpg" alt="" width="1024" height="1024" fetchpriority="high">
+      </div>
+      <div class="glass-stack glass-stack-right">
+        <div class="glass-chip">
+          <span class="glass-icon" aria-hidden="true">🍕</span>
+          <span class="glass-copy">
+            <strong>Dinner</strong>
+            <small>Paid by Rahul</small>
+          </span>
+          <span class="glass-amt">$86.40</span>
+        </div>
+        <div class="glass-chip">
+          <span class="glass-icon" aria-hidden="true">🚕</span>
+          <span class="glass-copy">
+            <strong>Taxi home</strong>
+            <small>Paid by you</small>
+          </span>
+          <span class="glass-amt">$24.00</span>
+        </div>
       </div>
     </div>
   </div>
@@ -72,83 +93,202 @@
 </section>
 
 <main>
-  <section class="section" id="moments" style="padding-bottom:0">
+  <section class="section" id="moments">
     <div class="container">
       <div class="section-head center">
         <h2>Whoever you’re with</h2>
         <p>Different crews. Same clarity. CountMeIn keeps shared money out of the way.</p>
       </div>
+
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="visual-stage compact" aria-hidden="true">
+            <div class="visual-photo">
+              <img src="assets/audience-travelers.jpg" alt="" width="800" height="800" loading="lazy">
+            </div>
+            <div class="glass-stack glass-stack-right">
+              <div class="glass-chip sm">
+                <span class="glass-icon" aria-hidden="true">✈️</span>
+                <span class="glass-copy">
+                  <strong>Flights</strong>
+                  <small>Paid by Maya</small>
+                </span>
+                <span class="glass-amt">$642</span>
+              </div>
+              <div class="glass-chip sm">
+                <span class="glass-icon" aria-hidden="true">🏨</span>
+                <span class="glass-copy">
+                  <strong>Airbnb</strong>
+                  <small>Paid by you</small>
+                </span>
+                <span class="glass-amt">$318</span>
+              </div>
+            </div>
+          </div>
+          <h3>Travelers</h3>
+          <p>Plan the adventure—not the expenses. Track flights, stays, and dinners as you go, then settle once.</p>
+        </article>
+
+        <article class="audience-card">
+          <div class="visual-stage compact" aria-hidden="true">
+            <div class="visual-photo">
+              <img src="assets/audience-couples.jpg" alt="" width="1024" height="1024" loading="lazy">
+            </div>
+            <div class="glass-stack glass-stack-left">
+              <div class="glass-chip sm">
+                <span class="glass-icon" aria-hidden="true">☕</span>
+                <span class="glass-copy">
+                  <strong>Brunch</strong>
+                  <small>Split 50/50</small>
+                </span>
+                <span class="glass-amt">$42</span>
+              </div>
+              <div class="glass-chip sm">
+                <span class="glass-icon" aria-hidden="true">🛒</span>
+                <span class="glass-copy">
+                  <strong>Groceries</strong>
+                  <small>Paid by Alex</small>
+                </span>
+                <span class="glass-amt">$67</span>
+              </div>
+            </div>
+          </div>
+          <h3>Couples</h3>
+          <p>Share everything but the awkward money talks. Keep spending transparent, fair, and easy as a team.</p>
+        </article>
+
+        <article class="audience-card">
+          <div class="visual-stage compact" aria-hidden="true">
+            <div class="visual-photo">
+              <img src="assets/audience-roommates.jpg" alt="" width="800" height="800" loading="lazy">
+            </div>
+            <div class="glass-stack glass-stack-right">
+              <div class="glass-chip sm balance">
+                <span class="avatar-dot">J</span>
+                <span class="glass-copy"><strong>Jordan</strong></span>
+                <span class="glass-amt pos">+$84</span>
+              </div>
+              <div class="glass-chip sm balance">
+                <span class="avatar-dot">S</span>
+                <span class="glass-copy"><strong>Sam</strong></span>
+                <span class="glass-amt neg">−$42</span>
+              </div>
+            </div>
+          </div>
+          <h3>Roommates</h3>
+          <p>Rent, groceries, wifi, cleaning. Transparent balances replace “I’ll pay you later” chaos.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="scene" id="travelers">
-    <div class="scene-media" aria-hidden="true">
-      <img src="assets/audience-travelers.jpg" alt="" width="1200" height="900" loading="lazy">
-    </div>
-    <div class="container scene-inner">
-      <div class="scene-content">
-        <div class="hero-kicker">Travelers</div>
-        <h2>Plan the adventure—not the expenses</h2>
-        <p>
-          Flights, stays, dinners, taxis. Everyone adds as you go.
-          Settle once when the trip ends—and keep the memories drama-free.
-        </p>
-        <div class="hero-meta">
-          <span>Shared trip groups</span>
-          <span>Multi-currency</span>
-          <span>Clear settle-up</span>
+  <section class="feature-band band-mint" id="track">
+    <div class="container feature-band-grid">
+      <div class="feature-band-copy">
+        <span class="eyebrow">Track as you go</span>
+        <h2>Add expenses in seconds</h2>
+        <p>Tickets, drinks, groceries, fuel—enter the amount, pick who paid, and CountMeIn handles the rest.</p>
+        <div class="tag-row">
+          <span class="tag">Equal or custom splits</span>
+          <span class="tag">Multi-currency</span>
+          <span class="tag">Live balances</span>
+        </div>
+      </div>
+      <div class="visual-stage" aria-hidden="true">
+        <div class="visual-photo">
+          <img src="assets/audience-travelers.jpg" alt="" width="800" height="800" loading="lazy">
+        </div>
+        <div class="glass-stack glass-stack-right tall">
+          <div class="glass-chip">
+            <span class="glass-icon" aria-hidden="true">🎟️</span>
+            <span class="glass-copy">
+              <strong>Festival tickets</strong>
+              <small>Paid by Emily</small>
+            </span>
+            <span class="glass-amt">$186</span>
+          </div>
+          <div class="glass-chip">
+            <span class="glass-icon" aria-hidden="true">🍺</span>
+            <span class="glass-copy">
+              <strong>Beers</strong>
+              <small>Paid by Emma</small>
+            </span>
+            <span class="glass-amt">$48</span>
+          </div>
+          <div class="glass-chip">
+            <span class="glass-icon" aria-hidden="true">🚕</span>
+            <span class="glass-copy">
+              <strong>Taxis</strong>
+              <small>Paid by you</small>
+            </span>
+            <span class="glass-amt">$32</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="scene scene-right" id="roommates">
-    <div class="scene-media" aria-hidden="true">
-      <img src="assets/audience-roommates.jpg" alt="" width="1200" height="900" loading="lazy">
-    </div>
-    <div class="container scene-inner">
-      <div class="scene-content">
-        <div class="hero-kicker">Roommates</div>
-        <h2>Share the flat—without awkward math</h2>
-        <p>
-          Rent, groceries, wifi, cleaning. Transparent balances replace
-          “I’ll pay you later” chaos—so home stays easy.
-        </p>
-        <div class="hero-meta">
-          <span>Household groups</span>
-          <span>Settle-up Day</span>
-          <span>Payment handles</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section soft" id="restaurant">
-    <div class="container">
-      <div class="section-head center">
+  <section class="feature-band band-sand" id="claim">
+    <div class="container feature-band-grid flip">
+      <div class="feature-band-copy">
         <span class="eyebrow">Restaurant nights</span>
         <h2>Scan. Claim. Done.</h2>
-        <p>Snap the receipt, let everyone tap what they ordered, and settle before dessert.</p>
+        <p>Snap the receipt, let everyone tap what they ordered, and settle before dessert—no calculator debates.</p>
+        <div class="tag-row">
+          <span class="tag">Receipt OCR</span>
+          <span class="tag">Live item claim</span>
+          <span class="tag">Fair leftovers</span>
+        </div>
+      </div>
+      <div class="visual-stage" aria-hidden="true">
+        <div class="visual-photo">
+          <img src="assets/hero-friends-dinner.jpg" alt="" width="1024" height="1024" loading="lazy">
+        </div>
+        <div class="glass-stack glass-stack-left">
+          <div class="glass-panel">
+            <div class="glass-panel-title">Who’s claiming</div>
+            <div class="glass-row"><span class="check">✓</span><span>Alex (you)</span><span class="pill">$15.50</span></div>
+            <div class="glass-row"><span class="check">✓</span><span>Priya</span><span class="pill">$22.00</span></div>
+            <div class="glass-row"><span class="check">✓</span><span>Jordan</span><span class="pill">$18.75</span></div>
+            <div class="glass-row"><span class="check">✓</span><span>Sam</span><span class="pill">$30.15</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="scene" id="dinner">
-    <div class="scene-media" aria-hidden="true">
-      <img src="assets/hero-friends-dinner.jpg" alt="" width="1600" height="1066" loading="lazy">
-    </div>
-    <div class="container scene-inner">
-      <div class="scene-content">
-        <div class="hero-kicker">At the table</div>
-        <h2>No more calculator debates</h2>
-        <p>
-          Live item claim turns a messy shared bill into a fair split—
-          while the food is still warm.
-        </p>
-        <div class="hero-meta">
-          <span>Receipt OCR</span>
-          <span>Live item claim</span>
-          <span>Fair leftovers</span>
+  <section class="feature-band band-sky" id="settle">
+    <div class="container feature-band-grid">
+      <div class="feature-band-copy">
+        <span class="eyebrow">Stay even</span>
+        <h2>Know exactly who owes what</h2>
+        <p>CountMeIn does the math—equal, parts, or custom—and suggests the simplest way to settle up.</p>
+        <div class="tag-row">
+          <span class="tag">Debt simplify</span>
+          <span class="tag">Payment handles</span>
+          <span class="tag">Settle-up Day</span>
+        </div>
+      </div>
+      <div class="visual-stage" aria-hidden="true">
+        <div class="visual-photo">
+          <img src="assets/audience-roommates.jpg" alt="" width="800" height="800" loading="lazy">
+        </div>
+        <div class="glass-stack glass-stack-left">
+          <div class="glass-chip balance">
+            <span class="avatar-dot">M</span>
+            <span class="glass-copy"><strong>Maya</strong></span>
+            <span class="glass-amt pos">+$82.10</span>
+          </div>
+          <div class="glass-chip balance">
+            <span class="avatar-dot">E</span>
+            <span class="glass-copy"><strong>Emma</strong></span>
+            <span class="glass-amt neg">−$44.00</span>
+          </div>
+          <div class="glass-chip balance">
+            <span class="avatar-dot">J</span>
+            <span class="glass-copy"><strong>you</strong></span>
+            <span class="glass-amt neg">−$38.10</span>
+          </div>
         </div>
       </div>
     </div>
@@ -201,7 +341,7 @@
           <span class="tag">Settle-up Day</span>
         </div>
       </div>
-      <div class="device-shot">
+      <div class="phone-frame">
         <img src="assets/feature-groups.png" alt="CountMeIn groups and chat" loading="lazy">
       </div>
     </div>
@@ -273,15 +413,29 @@
   </section>
 
   <section class="finale">
-    <div class="finale-media" aria-hidden="true">
-      <img src="assets/audience-travelers.jpg" alt="" loading="lazy">
-    </div>
-    <div class="container finale-copy">
-      <h2>Less chasing. More living.</h2>
-      <p>Download CountMeIn and keep the next trip, flat, or dinner table drama-free.</p>
-      <div class="hero-actions">
-        <a class="btn btn-on-dark" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly">Get it on Google Play</a>
-        <a class="btn btn-ghost" href="contact.html" style="color:#fff;border-color:rgba(255,255,255,.3);background:transparent">Send feedback</a>
+    <div class="container finale-grid">
+      <div class="finale-copy">
+        <h2>Less chasing. More living.</h2>
+        <p>Download CountMeIn and keep the next trip, flat, or dinner table drama-free.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.infinitetech.spendly">Get it on Google Play</a>
+          <a class="btn btn-ghost" href="contact.html">Send feedback</a>
+        </div>
+      </div>
+      <div class="visual-stage compact finale-visual" aria-hidden="true">
+        <div class="visual-photo">
+          <img src="assets/audience-couples.jpg" alt="" loading="lazy">
+        </div>
+        <div class="glass-stack glass-stack-right">
+          <div class="glass-chip sm">
+            <span class="glass-icon" aria-hidden="true">✓</span>
+            <span class="glass-copy">
+              <strong>All settled</strong>
+              <small>Group is even</small>
+            </span>
+            <span class="glass-amt pos">$0</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
